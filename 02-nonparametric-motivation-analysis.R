@@ -70,16 +70,16 @@ all_nonparametric_results <- lapply(list_dvs, function(dv) {
     filename <- paste0(x$path, 'NonParametricAnalysis.xlsx')
     result <- do_nonparametric_test(sdat, dv = dv, iv = x$iv, between = c(x$iv))
     
-    #write_plots_for_nonparametric_test(
-    #  result, ylab = "Score", title = x$title
-    #  , path = path, override = T
-    #  , ylim = c(1,7), levels = NULL #c('non-gamified','ont-gamified')
-    #)
-    #write_nonparametric_test_report(
-    #  result, ylab = "Score", title = x$title
-    #  , filename = filename, override = T
-    #  , ylim = c(1,7), levels = NULL #c('non-gamified','ont-gamified')
-    #)
+    write_plots_for_nonparametric_test(
+      result, ylab = "Score", title = x$title
+      , path = path, override = T
+      , ylim = c(1,7), levels = NULL #c('non-gamified','ont-gamified')
+    )
+    write_nonparametric_test_report(
+      result, ylab = "Score", title = x$title
+      , filename = filename, override = T
+      , ylim = c(1,7), levels = NULL #c('non-gamified','ont-gamified')
+    )
     return(result)
   })
 })

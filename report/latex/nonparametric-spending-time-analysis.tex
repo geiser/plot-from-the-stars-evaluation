@@ -1,0 +1,85 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summaries of Nonparametric Statistics Analysis for the spending time}
+
+%latex.default(result_df, caption = paste("Summary of Kruskal-Wallis rank test results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrl}\caption{Summary of Kruskal-Wallis rank test results  for the spending time} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Age&$3.324$&$2$&$0.190$&\tabularnewline
+Sex&$0.030$&$1$&$0.861$&\tabularnewline
+AcademicDegree&$4.499$&$2$&$0.105$&\tabularnewline
+KnownDomainContent&$0.524$&$1$&$0.469$&\tabularnewline
+LikeDomainContent&$0.000$&$1$&$0.983$&\tabularnewline
+LikeActionGames&$0.000$&$1$&$0.984$&\tabularnewline
+LikeAdventureGames&$1.276$&$1$&$0.259$&\tabularnewline
+LikeFightingGames&$3.896$&$1$&$0.048$&*\tabularnewline
+LikeFictionGames&$4.649$&$1$&$0.031$&*\tabularnewline
+LikePlatformerGames&$1.491$&$1$&$0.222$&\tabularnewline
+LikePuzzleGames&$0.766$&$1$&$0.381$&\tabularnewline
+LikeRacingGames&$0.091$&$1$&$0.763$&\tabularnewline
+LikeMusicalGames&$0.094$&$1$&$0.759$&\tabularnewline
+LikeMMORPGGames&$0.387$&$1$&$0.534$&\tabularnewline
+LikeShooterGames&$0.689$&$1$&$0.407$&\tabularnewline
+LikeSimulationGames&$0.808$&$1$&$0.369$&\tabularnewline
+LikeSportsGames&$0.093$&$1$&$0.761$&\tabularnewline
+LikeStrategyGames&$1.852$&$1$&$0.174$&\tabularnewline
+LikeNovelGames&$4.891$&$1$&$0.027$&*\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\section{Wilcoxon Pairs Statistics Analysis for the spending time}
+
+%latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\small
+\begin{longtable}{llrrrrrrrrl}\caption{Descriptive statistic of the pair wilcoxon analysis  for the spending time} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Age.Age.adolescence:emerging-adulthood.less.1&adolescence&$ 9$&$15$&$15.06$&$135.5$&$ 90.5$&$-1.69$&$0.047$&$0.264$&small\tabularnewline
+Age.Age.adolescence:emerging-adulthood.less.2&emerging-adulthood&$32$&$20$&$22.67$&$725.5$&$ 90.5$&$-1.69$&$0.047$&$0.264$&small\tabularnewline
+AcademicDegree.AcademicDegree.basic-school:undergraduate.less.1&basic-school&$ 9$&$ 5$&$14.89$&$134.0$&$ 89.0$&$-1.92$&$0.028$&$0.292$&small\tabularnewline
+AcademicDegree.AcademicDegree.basic-school:undergraduate.less.2&undergraduate&$34$&$20$&$23.88$&$812.0$&$ 89.0$&$-1.92$&$0.028$&$0.292$&small\tabularnewline
+LikeFightingGames.LikeFightingGames.no:yes.less.1&no&$33$&$15$&$21.82$&$720.0$&$159.0$&$-1.97$&$0.024$&$0.285$&small\tabularnewline
+LikeFightingGames.LikeFightingGames.no:yes.less.2&yes&$15$&$27$&$30.40$&$456.0$&$159.0$&$-1.97$&$0.024$&$0.285$&small\tabularnewline
+LikeFightingGames.LikeFightingGames.no:yes.two.sided.1&no&$33$&$15$&$21.82$&$720.0$&$159.0$&$-1.97$&$0.048$&$0.285$&small\tabularnewline
+LikeFightingGames.LikeFightingGames.no:yes.two.sided.2&yes&$15$&$27$&$30.40$&$456.0$&$159.0$&$-1.97$&$0.048$&$0.285$&small\tabularnewline
+LikeFictionGames.LikeFictionGames.no:yes.less.1&no&$29$&$15$&$20.98$&$608.5$&$173.5$&$-2.16$&$0.015$&$0.311$&medium\tabularnewline
+LikeFictionGames.LikeFictionGames.no:yes.less.2&yes&$19$&$25$&$29.87$&$567.5$&$173.5$&$-2.16$&$0.015$&$0.311$&medium\tabularnewline
+LikeFictionGames.LikeFictionGames.no:yes.two.sided.1&no&$29$&$15$&$20.98$&$608.5$&$173.5$&$-2.16$&$0.031$&$0.311$&medium\tabularnewline
+LikeFictionGames.LikeFictionGames.no:yes.two.sided.2&yes&$19$&$25$&$29.87$&$567.5$&$173.5$&$-2.16$&$0.031$&$0.311$&medium\tabularnewline
+LikeNovelGames.LikeNovelGames.no:yes.less.1&no&$39$&$15$&$22.36$&$872.0$&$ 92.0$&$-2.21$&$0.013$&$0.319$&medium\tabularnewline
+LikeNovelGames.LikeNovelGames.no:yes.less.2&yes&$ 9$&$25$&$33.78$&$304.0$&$ 92.0$&$-2.21$&$0.013$&$0.319$&medium\tabularnewline
+LikeNovelGames.LikeNovelGames.no:yes.two.sided.1&no&$39$&$15$&$22.36$&$872.0$&$ 92.0$&$-2.21$&$0.026$&$0.319$&medium\tabularnewline
+LikeNovelGames.LikeNovelGames.no:yes.two.sided.2&yes&$ 9$&$25$&$33.78$&$304.0$&$ 92.0$&$-2.21$&$0.026$&$0.319$&medium\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\end{document}
