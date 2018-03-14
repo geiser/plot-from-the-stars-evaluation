@@ -1,0 +1,81 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summaries of Nonparametric Statistics Analysis for the Value/Usefulness}
+
+%latex.default(result_df, caption = paste("Summary of Kruskal-Wallis rank test results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrl}\caption{Summary of Kruskal-Wallis rank test results  for the Value/Usefulness} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Age&$1.119$&$2$&$0.572$&\tabularnewline
+Sex&$2.111$&$1$&$0.146$&\tabularnewline
+AcademicDegree&$1.436$&$2$&$0.488$&\tabularnewline
+KnownDomainContent&$0.033$&$1$&$0.857$&\tabularnewline
+LikeDomainContent&$4.489$&$1$&$0.034$&*\tabularnewline
+LikeActionGames&$0.116$&$1$&$0.733$&\tabularnewline
+LikeAdventureGames&$0.266$&$1$&$0.606$&\tabularnewline
+LikeFightingGames&$0.096$&$1$&$0.757$&\tabularnewline
+LikeFictionGames&$1.122$&$1$&$0.289$&\tabularnewline
+LikePlatformerGames&$0.063$&$1$&$0.802$&\tabularnewline
+LikePuzzleGames&$0.916$&$1$&$0.339$&\tabularnewline
+LikeRacingGames&$1.379$&$1$&$0.240$&\tabularnewline
+LikeMusicalGames&$0.008$&$1$&$0.929$&\tabularnewline
+LikeMMORPGGames&$0.169$&$1$&$0.681$&\tabularnewline
+LikeShooterGames&$4.489$&$1$&$0.034$&*\tabularnewline
+LikeSimulationGames&$0.055$&$1$&$0.814$&\tabularnewline
+LikeSportsGames&$0.254$&$1$&$0.614$&\tabularnewline
+LikeStrategyGames&$4.302$&$1$&$0.038$&*\tabularnewline
+LikeNovelGames&$0.370$&$1$&$0.543$&\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\section{Wilcoxon Pairs Statistics Analysis for the Value/Usefulness}
+
+%latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\small
+\begin{longtable}{llrrrrrrrrl}\caption{Descriptive statistic of the pair wilcoxon analysis  for the Value/Usefulness} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+LikeDomainContent.LikeDomainContent.no:yes.less.1&no&$26$&$4.9$&$20.94$&$ 544.5$&$193.5$&$-2.12$&$0.017$&$0.303$&medium\tabularnewline
+LikeDomainContent.LikeDomainContent.no:yes.less.2&yes&$23$&$6.0$&$29.59$&$ 680.5$&$193.5$&$-2.12$&$0.017$&$0.303$&medium\tabularnewline
+LikeDomainContent.LikeDomainContent.no:yes.two.sided.1&no&$26$&$4.9$&$20.94$&$ 544.5$&$193.5$&$-2.12$&$0.034$&$0.303$&medium\tabularnewline
+LikeDomainContent.LikeDomainContent.no:yes.two.sided.2&yes&$23$&$6.0$&$29.59$&$ 680.5$&$193.5$&$-2.12$&$0.034$&$0.303$&medium\tabularnewline
+LikeShooterGames.LikeShooterGames.no:yes.greater.1&no&$26$&$5.8$&$29.06$&$ 755.5$&$404.5$&$ 2.12$&$0.017$&$0.303$&medium\tabularnewline
+LikeShooterGames.LikeShooterGames.no:yes.greater.2&yes&$23$&$4.4$&$20.41$&$ 469.5$&$404.5$&$ 2.12$&$0.017$&$0.303$&medium\tabularnewline
+LikeShooterGames.LikeShooterGames.no:yes.two.sided.1&no&$26$&$5.8$&$29.06$&$ 755.5$&$404.5$&$ 2.12$&$0.034$&$0.303$&medium\tabularnewline
+LikeShooterGames.LikeShooterGames.no:yes.two.sided.2&yes&$23$&$4.4$&$20.41$&$ 469.5$&$404.5$&$ 2.12$&$0.034$&$0.303$&medium\tabularnewline
+LikeStrategyGames.LikeStrategyGames.no:yes.less.1&no&$12$&$4.0$&$17.58$&$ 211.0$&$133.0$&$-2.07$&$0.019$&$0.296$&small\tabularnewline
+LikeStrategyGames.LikeStrategyGames.no:yes.less.2&yes&$37$&$5.6$&$27.41$&$1014.0$&$133.0$&$-2.07$&$0.019$&$0.296$&small\tabularnewline
+LikeStrategyGames.LikeStrategyGames.no:yes.two.sided.1&no&$12$&$4.0$&$17.58$&$ 211.0$&$133.0$&$-2.07$&$0.037$&$0.296$&small\tabularnewline
+LikeStrategyGames.LikeStrategyGames.no:yes.two.sided.2&yes&$37$&$5.6$&$27.41$&$1014.0$&$133.0$&$-2.07$&$0.037$&$0.296$&small\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\end{document}

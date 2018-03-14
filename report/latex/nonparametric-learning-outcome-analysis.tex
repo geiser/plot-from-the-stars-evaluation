@@ -1,0 +1,71 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summaries of Nonparametric Statistics Analysis for the improvement of right answers (Gain Score) from the pre-test to post-test}
+
+%latex.default(result_df, caption = paste("Summary of Kruskal-Wallis rank test results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrr}\caption{Summary of Kruskal-Wallis rank test results  for the improvement of right answers (Gain Score) from the pre-test to post-test} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Age&$3.026$&$2$&$0.220$&$$\tabularnewline
+Sex&$0.308$&$1$&$0.579$&$$\tabularnewline
+AcademicDegree&$0.569$&$2$&$0.752$&$$\tabularnewline
+KnownDomainContent&$0.356$&$1$&$0.551$&$$\tabularnewline
+LikeDomainContent&$0.708$&$1$&$0.400$&$$\tabularnewline
+LikeActionGames&$0.860$&$1$&$0.354$&$$\tabularnewline
+LikeAdventureGames&$1.077$&$1$&$0.299$&$$\tabularnewline
+LikeFightingGames&$0.026$&$1$&$0.873$&$$\tabularnewline
+LikeFictionGames&$1.212$&$1$&$0.271$&$$\tabularnewline
+LikePlatformerGames&$0.000$&$1$&$0.988$&$$\tabularnewline
+LikePuzzleGames&$2.672$&$1$&$0.102$&$$\tabularnewline
+LikeRacingGames&$0.013$&$1$&$0.911$&$$\tabularnewline
+LikeMusicalGames&$0.459$&$1$&$0.498$&$$\tabularnewline
+LikeMMORPGGames&$0.261$&$1$&$0.609$&$$\tabularnewline
+LikeShooterGames&$0.151$&$1$&$0.697$&$$\tabularnewline
+LikeSimulationGames&$0.967$&$1$&$0.325$&$$\tabularnewline
+LikeSportsGames&$0.004$&$1$&$0.950$&$$\tabularnewline
+LikeStrategyGames&$0.421$&$1$&$0.517$&$$\tabularnewline
+LikeNovelGames&$0.434$&$1$&$0.510$&$$\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\section{Wilcoxon Pairs Statistics Analysis for the improvement of right answers (Gain Score) from the pre-test to post-test}
+
+%latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\small
+\begin{longtable}{llrrrrrrrrl}\caption{Descriptive statistic of the pair wilcoxon analysis  for the improvement of right answers (Gain Score) from the pre-test to post-test} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+LikePuzzleGames.LikePuzzleGames.no:yes.greater.1&no&$17$&$0$&$24.18$&$411$&$258$&$1.63$&$0.045$&$0.255$&small\tabularnewline
+LikePuzzleGames.LikePuzzleGames.no:yes.greater.2&yes&$24$&$0$&$18.75$&$450$&$258$&$1.63$&$0.045$&$0.255$&small\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\end{document}

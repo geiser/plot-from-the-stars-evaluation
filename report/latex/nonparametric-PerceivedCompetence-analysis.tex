@@ -1,0 +1,89 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summaries of Nonparametric Statistics Analysis for the Perceived Competence}
+
+%latex.default(result_df, caption = paste("Summary of Kruskal-Wallis rank test results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrl}\caption{Summary of Kruskal-Wallis rank test results  for the Perceived Competence} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Age&$1.131$&$2$&$0.568$&\tabularnewline
+Sex&$0.068$&$1$&$0.794$&\tabularnewline
+AcademicDegree&$6.312$&$2$&$0.043$&*\tabularnewline
+KnownDomainContent&$4.257$&$1$&$0.039$&*\tabularnewline
+LikeDomainContent&$0.928$&$1$&$0.336$&\tabularnewline
+LikeActionGames&$0.068$&$1$&$0.795$&\tabularnewline
+LikeAdventureGames&$3.427$&$1$&$0.064$&\tabularnewline
+LikeFightingGames&$0.986$&$1$&$0.321$&\tabularnewline
+LikeFictionGames&$0.446$&$1$&$0.504$&\tabularnewline
+LikePlatformerGames&$4.960$&$1$&$0.026$&*\tabularnewline
+LikePuzzleGames&$0.253$&$1$&$0.615$&\tabularnewline
+LikeRacingGames&$0.027$&$1$&$0.871$&\tabularnewline
+LikeMusicalGames&$0.134$&$1$&$0.715$&\tabularnewline
+LikeMMORPGGames&$2.544$&$1$&$0.111$&\tabularnewline
+LikeShooterGames&$0.833$&$1$&$0.361$&\tabularnewline
+LikeSimulationGames&$0.019$&$1$&$0.890$&\tabularnewline
+LikeSportsGames&$0.023$&$1$&$0.879$&\tabularnewline
+LikeStrategyGames&$3.601$&$1$&$0.058$&\tabularnewline
+LikeNovelGames&$4.333$&$1$&$0.037$&*\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\section{Wilcoxon Pairs Statistics Analysis for the Perceived Competence}
+
+%latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\small
+\begin{longtable}{llrrrrrrrrl}\caption{Descriptive statistic of the pair wilcoxon analysis  for the Perceived Competence} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+AcademicDegree.AcademicDegree.basic-school:undergraduate.less.1&basic-school&$10$&$3.42$&$13.60$&$ 136.0$&$ 81.0$&$-2.50$&$0.006$&$0.376$&medium\tabularnewline
+AcademicDegree.AcademicDegree.basic-school:undergraduate.less.2&undergraduate&$34$&$4.92$&$25.12$&$ 854.0$&$ 81.0$&$-2.50$&$0.006$&$0.376$&medium\tabularnewline
+AcademicDegree.AcademicDegree.basic-school:undergraduate.two.sided.1&basic-school&$10$&$3.42$&$13.60$&$ 136.0$&$ 81.0$&$-2.50$&$0.011$&$0.376$&medium\tabularnewline
+AcademicDegree.AcademicDegree.basic-school:undergraduate.two.sided.2&undergraduate&$34$&$4.92$&$25.12$&$ 854.0$&$ 81.0$&$-2.50$&$0.011$&$0.376$&medium\tabularnewline
+KnownDomainContent.KnownDomainContent.no:yes.less.1&no&$25$&$4.17$&$20.88$&$ 522.0$&$197.0$&$-2.06$&$0.019$&$0.295$&small\tabularnewline
+KnownDomainContent.KnownDomainContent.no:yes.less.2&yes&$24$&$5.00$&$29.29$&$ 703.0$&$197.0$&$-2.06$&$0.019$&$0.295$&small\tabularnewline
+KnownDomainContent.KnownDomainContent.no:yes.two.sided.1&no&$25$&$4.17$&$20.88$&$ 522.0$&$197.0$&$-2.06$&$0.039$&$0.295$&small\tabularnewline
+KnownDomainContent.KnownDomainContent.no:yes.two.sided.2&yes&$24$&$5.00$&$29.29$&$ 703.0$&$197.0$&$-2.06$&$0.039$&$0.295$&small\tabularnewline
+LikeAdventureGames.LikeAdventureGames.no:yes.less.1&no&$17$&$3.67$&$19.82$&$ 337.0$&$184.0$&$-1.85$&$0.032$&$0.264$&small\tabularnewline
+LikeAdventureGames.LikeAdventureGames.no:yes.less.2&yes&$32$&$4.75$&$27.75$&$ 888.0$&$184.0$&$-1.85$&$0.032$&$0.264$&small\tabularnewline
+LikePlatformerGames.LikePlatformerGames.no:yes.less.1&no&$26$&$4.00$&$20.73$&$ 539.0$&$188.0$&$-2.23$&$0.013$&$0.318$&medium\tabularnewline
+LikePlatformerGames.LikePlatformerGames.no:yes.less.2&yes&$23$&$5.50$&$29.83$&$ 686.0$&$188.0$&$-2.23$&$0.013$&$0.318$&medium\tabularnewline
+LikePlatformerGames.LikePlatformerGames.no:yes.two.sided.1&no&$26$&$4.00$&$20.73$&$ 539.0$&$188.0$&$-2.23$&$0.025$&$0.318$&medium\tabularnewline
+LikePlatformerGames.LikePlatformerGames.no:yes.two.sided.2&yes&$23$&$5.50$&$29.83$&$ 686.0$&$188.0$&$-2.23$&$0.025$&$0.318$&medium\tabularnewline
+LikeStrategyGames.LikeStrategyGames.no:yes.less.1&no&$12$&$3.92$&$18.21$&$ 218.5$&$140.5$&$-1.90$&$0.029$&$0.271$&small\tabularnewline
+LikeStrategyGames.LikeStrategyGames.no:yes.less.2&yes&$37$&$4.67$&$27.20$&$1006.5$&$140.5$&$-1.90$&$0.029$&$0.271$&small\tabularnewline
+LikeNovelGames.LikeNovelGames.no:yes.less.1&no&$40$&$4.33$&$22.99$&$ 919.5$&$ 99.5$&$-2.08$&$0.018$&$0.297$&small\tabularnewline
+LikeNovelGames.LikeNovelGames.no:yes.less.2&yes&$ 9$&$5.50$&$33.94$&$ 305.5$&$ 99.5$&$-2.08$&$0.018$&$0.297$&small\tabularnewline
+LikeNovelGames.LikeNovelGames.no:yes.two.sided.1&no&$40$&$4.33$&$22.99$&$ 919.5$&$ 99.5$&$-2.08$&$0.036$&$0.297$&small\tabularnewline
+LikeNovelGames.LikeNovelGames.no:yes.two.sided.2&yes&$ 9$&$5.50$&$33.94$&$ 305.5$&$ 99.5$&$-2.08$&$0.036$&$0.297$&small\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\end{document}

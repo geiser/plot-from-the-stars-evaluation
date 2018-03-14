@@ -1,0 +1,79 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summaries of Reliability Analysis}
+
+\subsection{Exploratory and Confirmatory Factor Analysis}
+
+%latex.default(fa_summary_df, caption = paste("Summary of exploratory and confirmatory factor analysis for the",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrr}\caption{Summary of exploratory and confirmatory factor analysis for the adapted Portuguese version of IMI questionnaire} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{MR3}&\multicolumn{1}{c}{MR2}&\multicolumn{1}{c}{MR1}&\multicolumn{1}{c}{MR4}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{MR3}&\multicolumn{1}{c}{MR2}&\multicolumn{1}{c}{MR1}&\multicolumn{1}{c}{MR4}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{fa}
+Item33&$ 0.929$&$ 0.202$&$ 0.044$&$-0.241$\tabularnewline
+Item28&$ 0.836$&$ 0.026$&$ 0.194$&$-0.249$\tabularnewline
+Item25&$ 0.808$&$ 0.006$&$ 0.321$&$-0.094$\tabularnewline
+Item34&$-0.791$&$ 0.182$&$-0.180$&$ 0.029$\tabularnewline
+Item37&$ 0.687$&$ 0.321$&$ 0.159$&$-0.280$\tabularnewline
+Item30&$ 0.675$&$ 0.394$&$-0.157$&$-0.109$\tabularnewline
+Item29&$ 0.138$&$ 0.940$&$ 0.102$&$ 0.027$\tabularnewline
+Item26&$ 0.019$&$ 0.840$&$ 0.135$&$-0.042$\tabularnewline
+Item31&$ 0.238$&$ 0.802$&$ 0.281$&$-0.009$\tabularnewline
+Item36&$-0.086$&$ 0.798$&$ 0.339$&$ 0.029$\tabularnewline
+Item35&$ 0.129$&$ 0.781$&$ 0.222$&$ 0.024$\tabularnewline
+Item24&$ 0.201$&$ 0.207$&$ 0.876$&$-0.020$\tabularnewline
+Item08&$ 0.023$&$ 0.367$&$ 0.755$&$-0.071$\tabularnewline
+Item21&$ 0.109$&$ 0.369$&$ 0.778$&$-0.328$\tabularnewline
+Item09&$ 0.417$&$ 0.207$&$ 0.707$&$-0.269$\tabularnewline
+Item12&$ 0.130$&$ 0.025$&$ 0.704$&$-0.174$\tabularnewline
+Item11&$ 0.058$&$ 0.234$&$ 0.524$&$-0.263$\tabularnewline
+Item05&$-0.187$&$-0.012$&$-0.088$&$ 0.908$\tabularnewline
+Item13&$-0.167$&$ 0.000$&$-0.177$&$ 0.912$\tabularnewline
+Item18&$-0.245$&$-0.047$&$-0.148$&$ 0.806$\tabularnewline
+Item03&$-0.123$&$ 0.125$&$-0.370$&$ 0.809$\tabularnewline
+SS loadings&$ 4.253$&$ 4.243$&$ 3.908$&$ 3.468$\tabularnewline
+Cumulative Var&$ 0.203$&$ 0.405$&$ 0.591$&$ 0.756$\tabularnewline
+Proportion Explained&$ 0.268$&$ 0.267$&$ 0.246$&$ 0.219$\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{ CFI: 0.817, TLI: 0.79, \\ df: 183, $\chi^2$: 370.135, p-value: 0, \\ RMSEA: 0.144 [0.123, 0.166], p-value(RMSEA): 0 }} 
+
+
+\subsection{Reliability Analysis}
+
+%latex.default(rel_summary_df, caption = paste("Result of reliability analysis for the",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lr}\caption{Result of reliability analysis for the adapted Portuguese version of IMI questionnaire} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Total}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Total}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{rel}
+Intrinsic Motivation&$0.920$\tabularnewline
+Perceived Competence&$0.922$\tabularnewline
+Value/Usefulness&$0.935$\tabularnewline
+Interest/Enjoyment&$0.910$\tabularnewline
+Perceived Choice&$0.942$\tabularnewline
+\hline
+\end{longtable}}
+
+\end{document}

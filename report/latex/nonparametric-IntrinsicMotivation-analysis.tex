@@ -1,0 +1,79 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summaries of Nonparametric Statistics Analysis for the Intrinsic Motivation}
+
+%latex.default(result_df, caption = paste("Summary of Kruskal-Wallis rank test results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrl}\caption{Summary of Kruskal-Wallis rank test results  for the Intrinsic Motivation} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Age&$1.285$&$2$&$0.526$&\tabularnewline
+Sex&$0.542$&$1$&$0.461$&\tabularnewline
+AcademicDegree&$4.096$&$2$&$0.129$&\tabularnewline
+KnownDomainContent&$2.500$&$1$&$0.114$&\tabularnewline
+LikeDomainContent&$4.182$&$1$&$0.041$&*\tabularnewline
+LikeActionGames&$0.073$&$1$&$0.787$&\tabularnewline
+LikeAdventureGames&$1.105$&$1$&$0.293$&\tabularnewline
+LikeFightingGames&$0.710$&$1$&$0.399$&\tabularnewline
+LikeFictionGames&$1.493$&$1$&$0.222$&\tabularnewline
+LikePlatformerGames&$3.551$&$1$&$0.059$&\tabularnewline
+LikePuzzleGames&$0.170$&$1$&$0.680$&\tabularnewline
+LikeRacingGames&$0.851$&$1$&$0.356$&\tabularnewline
+LikeMusicalGames&$0.071$&$1$&$0.790$&\tabularnewline
+LikeMMORPGGames&$2.605$&$1$&$0.107$&\tabularnewline
+LikeShooterGames&$2.508$&$1$&$0.113$&\tabularnewline
+LikeSimulationGames&$0.004$&$1$&$0.949$&\tabularnewline
+LikeSportsGames&$0.039$&$1$&$0.843$&\tabularnewline
+LikeStrategyGames&$2.149$&$1$&$0.143$&\tabularnewline
+LikeNovelGames&$0.772$&$1$&$0.380$&\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\section{Wilcoxon Pairs Statistics Analysis for the Intrinsic Motivation}
+
+%latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\small
+\begin{longtable}{llrrrrrrrrl}\caption{Descriptive statistic of the pair wilcoxon analysis  for the Intrinsic Motivation} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+AcademicDegree.AcademicDegree.basic-school:undergraduate.less.1&basic-school&$10$&$4.05$&$15.40$&$154$&$ 99$&$-1.99$&$0.023$&$0.300$&medium\tabularnewline
+AcademicDegree.AcademicDegree.basic-school:undergraduate.less.2&undergraduate&$34$&$5.12$&$24.59$&$836$&$ 99$&$-1.99$&$0.023$&$0.300$&medium\tabularnewline
+AcademicDegree.AcademicDegree.basic-school:undergraduate.two.sided.1&basic-school&$10$&$4.05$&$15.40$&$154$&$ 99$&$-1.99$&$0.046$&$0.300$&medium\tabularnewline
+AcademicDegree.AcademicDegree.basic-school:undergraduate.two.sided.2&undergraduate&$34$&$5.12$&$24.59$&$836$&$ 99$&$-1.99$&$0.046$&$0.300$&medium\tabularnewline
+LikeDomainContent.LikeDomainContent.no:yes.less.1&no&$26$&$4.67$&$21.08$&$548$&$197$&$-2.04$&$0.020$&$0.292$&small\tabularnewline
+LikeDomainContent.LikeDomainContent.no:yes.less.2&yes&$23$&$5.76$&$29.43$&$677$&$197$&$-2.04$&$0.020$&$0.292$&small\tabularnewline
+LikeDomainContent.LikeDomainContent.no:yes.two.sided.1&no&$26$&$4.67$&$21.08$&$548$&$197$&$-2.04$&$0.041$&$0.292$&small\tabularnewline
+LikeDomainContent.LikeDomainContent.no:yes.two.sided.2&yes&$23$&$5.76$&$29.43$&$677$&$197$&$-2.04$&$0.041$&$0.292$&small\tabularnewline
+LikePlatformerGames.LikePlatformerGames.no:yes.less.1&no&$26$&$4.62$&$21.38$&$556$&$205$&$-1.88$&$0.030$&$0.269$&small\tabularnewline
+LikePlatformerGames.LikePlatformerGames.no:yes.less.2&yes&$23$&$5.24$&$29.09$&$669$&$205$&$-1.88$&$0.030$&$0.269$&small\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\end{document}
