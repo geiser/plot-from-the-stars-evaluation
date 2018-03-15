@@ -1,0 +1,174 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summaries of Parametric Statistics Analysis for the scores of Perceived Competence}
+
+%latex.default(result_df, caption = paste("Summary of one-way ANOVA results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrrl}\caption{Summary of one-way ANOVA results  for the scores of Perceived Competence} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Sum Sq}&\multicolumn{1}{c}{Df}&\multicolumn{1}{c}{F value}&\multicolumn{1}{c}{Pr(\textgreater F)}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Sum Sq}&\multicolumn{1}{c}{Df}&\multicolumn{1}{c}{F value}&\multicolumn{1}{c}{Pr(\textgreater F)}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Age.(Intercept)&$ 624.023$&$ 1$&$273.048$&$0.000$&\tabularnewline
+Age.Age&$   2.510$&$ 2$&$  0.549$&$0.581$&\tabularnewline
+Age.Residuals&$ 105.128$&$46$&$$&$$&\tabularnewline
+Sex.(Intercept)&$ 770.208$&$ 1$&$336.406$&$0.000$&\tabularnewline
+Sex.Sex&$   0.031$&$ 1$&$  0.014$&$0.908$&\tabularnewline
+Sex.Residuals&$ 107.607$&$47$&$$&$$&\tabularnewline
+AcademicDegree.(Intercept)&$ 394.742$&$ 1$&$278.601$&$0.000$&\tabularnewline
+AcademicDegree.AcademicDegree&$  19.625$&$ 2$&$  6.925$&$0.003$&**\tabularnewline
+AcademicDegree.Residuals&$  59.509$&$42$&$$&$$&\tabularnewline
+KnownDomainContent.KnownDomainContent&$   7.848$&$ 1$&$  4.297$&$0.044$&\tabularnewline
+KnownDomainContent.Residuals&$  80.365$&$44$&$$&$$&\tabularnewline
+LikeDomainContent.(Intercept)&$1013.055$&$ 1$&$535.132$&$0.000$&\tabularnewline
+LikeDomainContent.LikeDomainContent&$   0.365$&$ 1$&$  0.193$&$0.663$&\tabularnewline
+LikeDomainContent.Residuals&$  85.189$&$45$&$$&$$&\tabularnewline
+LikeActionGames.(Intercept)&$ 992.878$&$ 1$&$434.051$&$0.000$&\tabularnewline
+LikeActionGames.LikeActionGames&$   0.127$&$ 1$&$  0.056$&$0.815$&\tabularnewline
+LikeActionGames.Residuals&$ 107.511$&$47$&$$&$$&\tabularnewline
+LikeAdventureGames.(Intercept)&$ 848.691$&$ 1$&$401.252$&$0.000$&\tabularnewline
+LikeAdventureGames.LikeAdventureGames&$   8.228$&$ 1$&$  3.890$&$0.054$&\tabularnewline
+LikeAdventureGames.Residuals&$  99.410$&$47$&$$&$$&\tabularnewline
+LikeFightingGames.(Intercept)&$ 896.857$&$ 1$&$396.066$&$0.000$&\tabularnewline
+LikeFightingGames.LikeFightingGames&$   1.211$&$ 1$&$  0.535$&$0.468$&\tabularnewline
+LikeFightingGames.Residuals&$ 106.427$&$47$&$$&$$&\tabularnewline
+LikeFictionGames.(Intercept)&$ 956.256$&$ 1$&$420.780$&$0.000$&\tabularnewline
+LikeFictionGames.LikeFictionGames&$   0.827$&$ 1$&$  0.364$&$0.549$&\tabularnewline
+LikeFictionGames.Residuals&$ 106.811$&$47$&$$&$$&\tabularnewline
+LikePlatformerGames.LikePlatformerGames&$   9.136$&$ 1$&$  5.683$&$0.022$&\tabularnewline
+LikePlatformerGames.Residuals&$  70.737$&$44$&$$&$$&\tabularnewline
+LikePuzzleGames.(Intercept)&$ 981.123$&$ 1$&$428.911$&$0.000$&\tabularnewline
+LikePuzzleGames.LikePuzzleGames&$   0.127$&$ 1$&$  0.056$&$0.815$&\tabularnewline
+LikePuzzleGames.Residuals&$ 107.511$&$47$&$$&$$&\tabularnewline
+LikeRacingGames.(Intercept)&$ 858.004$&$ 1$&$375.920$&$0.000$&\tabularnewline
+LikeRacingGames.LikeRacingGames&$   0.365$&$ 1$&$  0.160$&$0.691$&\tabularnewline
+LikeRacingGames.Residuals&$ 107.273$&$47$&$$&$$&\tabularnewline
+LikeMusicalGames.(Intercept)&$ 809.571$&$ 1$&$353.512$&$0.000$&\tabularnewline
+LikeMusicalGames.LikeMusicalGames&$   0.005$&$ 1$&$  0.002$&$0.964$&\tabularnewline
+LikeMusicalGames.Residuals&$ 107.634$&$47$&$$&$$&\tabularnewline
+LikeMMORPGGames.(Intercept)&$ 981.319$&$ 1$&$449.929$&$0.000$&\tabularnewline
+LikeMMORPGGames.LikeMMORPGGames&$   5.129$&$ 1$&$  2.352$&$0.132$&\tabularnewline
+LikeMMORPGGames.Residuals&$ 102.509$&$47$&$$&$$&\tabularnewline
+\newpage
+LikeShooterGames.(Intercept)&$ 985.166$&$ 1$&$436.639$&$0.000$&\tabularnewline
+LikeShooterGames.LikeShooterGames&$   1.595$&$ 1$&$  0.707$&$0.405$&\tabularnewline
+LikeShooterGames.Residuals&$ 106.044$&$47$&$$&$$&\tabularnewline
+LikeSimulationGames.(Intercept)&$ 880.056$&$ 1$&$384.571$&$0.000$&\tabularnewline
+LikeSimulationGames.LikeSimulationGames&$   0.083$&$ 1$&$  0.036$&$0.850$&\tabularnewline
+LikeSimulationGames.Residuals&$ 107.555$&$47$&$$&$$&\tabularnewline
+LikeSportsGames.(Intercept)&$ 417.840$&$ 1$&$182.601$&$0.000$&\tabularnewline
+LikeSportsGames.LikeSportsGames&$   0.090$&$ 1$&$  0.039$&$0.844$&\tabularnewline
+LikeSportsGames.Residuals&$ 107.549$&$47$&$$&$$&\tabularnewline
+LikeStrategyGames.(Intercept)&$ 665.939$&$ 1$&$309.640$&$0.000$&\tabularnewline
+LikeStrategyGames.LikeStrategyGames&$   6.556$&$ 1$&$  3.048$&$0.087$&\tabularnewline
+LikeStrategyGames.Residuals&$ 101.082$&$47$&$$&$$&\tabularnewline
+LikeNovelGames.(Intercept)&$ 688.241$&$ 1$&$325.585$&$0.000$&\tabularnewline
+LikeNovelGames.LikeNovelGames&$   8.287$&$ 1$&$  3.920$&$0.054$&\tabularnewline
+LikeNovelGames.Residuals&$  99.352$&$47$&$$&$$&\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+%latex.default(post_hoc_df, caption = paste("Descriptive statistics and Tukey post-hoc test results",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\small
+\begin{longtable}{lrrrrrrrrrrrll}\caption{Descriptive statistics and Tukey post-hoc test results  for the scores of Perceived Competence} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{mean}&\multicolumn{1}{c}{lsmean}&\multicolumn{1}{c}{SE}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{lwr.CI}&\multicolumn{1}{c}{upr.CI}&\multicolumn{1}{c}{t.ratio}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{p.ajd}&\multicolumn{1}{c}{g}&\multicolumn{1}{c}{sig}&\multicolumn{1}{c}{mag}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{mean}&\multicolumn{1}{c}{lsmean}&\multicolumn{1}{c}{SE}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{lwr.CI}&\multicolumn{1}{c}{upr.CI}&\multicolumn{1}{c}{t.ratio}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{p.ajd}&\multicolumn{1}{c}{g}&\multicolumn{1}{c}{sig}&\multicolumn{1}{c}{mag}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{post}
+Age.adolescence&$10$&$ 4.150$&$ 4.150$&$0.478$&$46$&$ 3.188$&$ 5.112$&$$&$$&$$&$$&&\tabularnewline
+Age.adulthood&$ 7$&$ 4.262$&$ 4.262$&$0.571$&$46$&$ 3.112$&$ 5.412$&$$&$$&$$&$$&&\tabularnewline
+Age.adolescence - adulthood&$17$&$-0.112$&$-0.112$&$0.745$&$$&$-1.916$&$ 1.692$&$-0.150$&$0.988$&$0.988$&$-0.058$&&\tabularnewline
+Age.adolescence1&$10$&$ 4.150$&$ 4.150$&$0.478$&$46$&$ 3.188$&$ 5.112$&$$&$$&$$&$$&&\tabularnewline
+Age.emerging-adulthood&$32$&$ 4.667$&$ 4.667$&$0.267$&$46$&$ 4.129$&$ 5.205$&$$&$$&$$&$$&&\tabularnewline
+Age.adolescence - emerging-adulthood&$42$&$-0.517$&$-0.517$&$0.548$&$$&$-1.843$&$ 0.810$&$-0.943$&$0.616$&$0.616$&$-0.355$&&\tabularnewline
+Age.adulthood1&$ 7$&$ 4.262$&$ 4.262$&$0.571$&$46$&$ 3.112$&$ 5.412$&$$&$$&$$&$$&&\tabularnewline
+Age.emerging-adulthood1&$32$&$ 4.667$&$ 4.667$&$0.267$&$46$&$ 4.129$&$ 5.205$&$$&$$&$$&$$&&\tabularnewline
+Age.adulthood - emerging-adulthood&$39$&$-0.405$&$-0.405$&$0.631$&$$&$-1.932$&$ 1.123$&$-0.642$&$0.798$&$0.798$&$-0.273$&&\tabularnewline
+Sex.female&$13$&$ 4.462$&$ 4.462$&$0.420$&$47$&$ 3.617$&$ 5.306$&$$&$$&$$&$$&&\tabularnewline
+Sex.male&$36$&$ 4.519$&$ 4.519$&$0.252$&$47$&$ 4.011$&$ 5.026$&$$&$$&$$&$$&&\tabularnewline
+Sex.female - male&$49$&$-0.057$&$-0.057$&$0.490$&$$&$-1.042$&$ 0.928$&$-0.116$&$0.908$&$0.908$&$-0.037$&&\tabularnewline
+AcademicDegree.basic-school&$10$&$ 3.467$&$ 3.467$&$0.376$&$42$&$ 2.707$&$ 4.226$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.postgraduate&$ 4$&$ 3.833$&$ 3.833$&$0.595$&$42$&$ 2.632$&$ 5.034$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.basic-school - postgraduate&$14$&$-0.367$&$-0.367$&$0.704$&$$&$-2.078$&$ 1.344$&$-0.521$&$0.862$&$0.862$&$-0.268$&&\tabularnewline
+AcademicDegree.basic-school1&$10$&$ 3.467$&$ 3.467$&$0.376$&$42$&$ 2.707$&$ 4.226$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.undergraduate&$31$&$ 4.984$&$ 4.984$&$0.214$&$42$&$ 4.552$&$ 5.415$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.basic-school - undergraduate&$41$&$-1.517$&$-1.517$&$0.433$&$$&$-2.569$&$-0.466$&$-3.505$&$0.003$&$0.003$&$-1.220$&**&large\tabularnewline
+AcademicDegree.postgraduate1&$ 4$&$ 3.833$&$ 3.833$&$0.595$&$42$&$ 2.632$&$ 5.034$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.undergraduate1&$31$&$ 4.984$&$ 4.984$&$0.214$&$42$&$ 4.552$&$ 5.415$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.postgraduate - undergraduate&$35$&$-1.151$&$-1.151$&$0.632$&$$&$-2.687$&$ 0.386$&$-1.819$&$0.176$&$0.176$&$-1.005$&&\tabularnewline
+KnownDomainContent.no&$23$&$ 4.239$&$ 4.239$&$0.282$&$44$&$ 3.671$&$ 4.807$&$$&$$&$$&$$&&\tabularnewline
+KnownDomainContent.yes&$23$&$ 5.065$&$ 5.065$&$0.282$&$44$&$ 4.497$&$ 5.633$&$$&$$&$$&$$&&\tabularnewline
+KnownDomainContent.no - yes&$46$&$-0.826$&$-0.826$&$0.399$&$$&$-1.629$&$-0.023$&$-2.073$&$0.044$&$0.044$&$-0.601$&*&medium\tabularnewline
+LikeDomainContent.no&$24$&$ 4.556$&$ 4.556$&$0.281$&$45$&$ 3.990$&$ 5.121$&$$&$$&$$&$$&&\tabularnewline
+LikeDomainContent.yes&$23$&$ 4.732$&$ 4.732$&$0.287$&$45$&$ 4.154$&$ 5.310$&$$&$$&$$&$$&&\tabularnewline
+LikeDomainContent.no - yes&$47$&$-0.176$&$-0.176$&$0.401$&$$&$-0.985$&$ 0.632$&$-0.439$&$0.663$&$0.663$&$-0.126$&&\tabularnewline
+LikeActionGames.no&$24$&$ 4.451$&$ 4.451$&$0.309$&$47$&$ 3.830$&$ 5.072$&$$&$$&$$&$$&&\tabularnewline
+LikeActionGames.yes&$25$&$ 4.553$&$ 4.553$&$0.302$&$47$&$ 3.945$&$ 5.162$&$$&$$&$$&$$&&\tabularnewline
+LikeActionGames.no - yes&$49$&$-0.102$&$-0.102$&$0.432$&$$&$-0.971$&$ 0.768$&$-0.236$&$0.815$&$0.815$&$-0.066$&&\tabularnewline
+LikeAdventureGames.no&$17$&$ 3.941$&$ 3.941$&$0.353$&$47$&$ 3.232$&$ 4.651$&$$&$$&$$&$$&&\tabularnewline
+LikeAdventureGames.yes&$32$&$ 4.802$&$ 4.802$&$0.257$&$47$&$ 4.285$&$ 5.319$&$$&$$&$$&$$&&\tabularnewline
+LikeAdventureGames.no - yes&$49$&$-0.861$&$-0.861$&$0.436$&$$&$-1.739$&$ 0.017$&$-1.972$&$0.054$&$0.054$&$-0.582$&&\tabularnewline
+LikeFightingGames.no&$33$&$ 4.394$&$ 4.394$&$0.262$&$47$&$ 3.867$&$ 4.921$&$$&$$&$$&$$&&\tabularnewline
+LikeFightingGames.yes&$16$&$ 4.729$&$ 4.729$&$0.376$&$47$&$ 3.972$&$ 5.486$&$$&$$&$$&$$&&\tabularnewline
+LikeFightingGames.no - yes&$49$&$-0.335$&$-0.335$&$0.458$&$$&$-1.257$&$ 0.587$&$-0.731$&$0.468$&$0.468$&$-0.219$&&\tabularnewline
+LikeFictionGames.no&$30$&$ 4.400$&$ 4.400$&$0.275$&$47$&$ 3.846$&$ 4.954$&$$&$$&$$&$$&&\tabularnewline
+LikeFictionGames.yes&$19$&$ 4.667$&$ 4.667$&$0.346$&$47$&$ 3.971$&$ 5.362$&$$&$$&$$&$$&&\tabularnewline
+LikeFictionGames.no - yes&$49$&$-0.267$&$-0.267$&$0.442$&$$&$-1.156$&$ 0.623$&$-0.603$&$0.549$&$0.549$&$-0.174$&&\tabularnewline
+LikePlatformerGames.no&$23$&$ 4.145$&$ 4.145$&$0.264$&$44$&$ 3.612$&$ 4.678$&$$&$$&$$&$$&&\tabularnewline
+\newpage
+LikePlatformerGames.yes&$23$&$ 5.036$&$ 5.036$&$0.264$&$44$&$ 4.503$&$ 5.569$&$$&$$&$$&$$&&\tabularnewline
+LikePlatformerGames.no - yes&$46$&$-0.891$&$-0.891$&$0.374$&$$&$-1.645$&$-0.138$&$-2.384$&$0.022$&$0.022$&$-0.691$&*&medium\tabularnewline
+LikePuzzleGames.no&$22$&$ 4.447$&$ 4.447$&$0.322$&$47$&$ 3.798$&$ 5.096$&$$&$$&$$&$$&&\tabularnewline
+LikePuzzleGames.yes&$27$&$ 4.549$&$ 4.549$&$0.291$&$47$&$ 3.964$&$ 5.135$&$$&$$&$$&$$&&\tabularnewline
+LikePuzzleGames.no - yes&$49$&$-0.102$&$-0.102$&$0.434$&$$&$-0.976$&$ 0.771$&$-0.236$&$0.815$&$0.815$&$-0.067$&&\tabularnewline
+LikeRacingGames.no&$34$&$ 4.446$&$ 4.446$&$0.259$&$47$&$ 3.925$&$ 4.967$&$$&$$&$$&$$&&\tabularnewline
+LikeRacingGames.yes&$15$&$ 4.633$&$ 4.633$&$0.390$&$47$&$ 3.849$&$ 5.418$&$$&$$&$$&$$&&\tabularnewline
+LikeRacingGames.no - yes&$49$&$-0.187$&$-0.187$&$0.468$&$$&$-1.129$&$ 0.755$&$-0.400$&$0.691$&$0.691$&$-0.122$&&\tabularnewline
+LikeMusicalGames.no&$35$&$ 4.510$&$ 4.510$&$0.256$&$47$&$ 3.995$&$ 5.024$&$$&$$&$$&$$&&\tabularnewline
+LikeMusicalGames.yes&$14$&$ 4.488$&$ 4.488$&$0.404$&$47$&$ 3.674$&$ 5.302$&$$&$$&$$&$$&&\tabularnewline
+LikeMusicalGames.no - yes&$49$&$ 0.021$&$ 0.021$&$0.479$&$$&$-0.941$&$ 0.984$&$ 0.045$&$0.964$&$0.964$&$ 0.014$&&\tabularnewline
+LikeMMORPGGames.no&$23$&$ 4.159$&$ 4.159$&$0.308$&$47$&$ 3.540$&$ 4.779$&$$&$$&$$&$$&&\tabularnewline
+LikeMMORPGGames.yes&$26$&$ 4.808$&$ 4.808$&$0.290$&$47$&$ 4.225$&$ 5.390$&$$&$$&$$&$$&&\tabularnewline
+LikeMMORPGGames.no - yes&$49$&$-0.648$&$-0.648$&$0.423$&$$&$-1.499$&$ 0.202$&$-1.533$&$0.132$&$0.132$&$-0.432$&&\tabularnewline
+LikeShooterGames.no&$26$&$ 4.673$&$ 4.673$&$0.295$&$47$&$ 4.080$&$ 5.266$&$$&$$&$$&$$&&\tabularnewline
+LikeShooterGames.yes&$23$&$ 4.312$&$ 4.312$&$0.313$&$47$&$ 3.682$&$ 4.942$&$$&$$&$$&$$&&\tabularnewline
+LikeShooterGames.no - yes&$49$&$ 0.361$&$ 0.361$&$0.430$&$$&$-0.504$&$ 1.226$&$ 0.841$&$0.405$&$0.405$&$ 0.237$&&\tabularnewline
+LikeSimulationGames.no&$33$&$ 4.475$&$ 4.475$&$0.263$&$47$&$ 3.945$&$ 5.005$&$$&$$&$$&$$&&\tabularnewline
+LikeSimulationGames.yes&$16$&$ 4.562$&$ 4.563$&$0.378$&$47$&$ 3.802$&$ 5.323$&$$&$$&$$&$$&&\tabularnewline
+LikeSimulationGames.no - yes&$49$&$-0.088$&$-0.088$&$0.461$&$$&$-1.015$&$ 0.839$&$-0.190$&$0.850$&$0.850$&$-0.057$&&\tabularnewline
+LikeSportsGames.no&$43$&$ 4.519$&$ 4.519$&$0.231$&$47$&$ 4.055$&$ 4.983$&$$&$$&$$&$$&&\tabularnewline
+LikeSportsGames.yes&$ 6$&$ 4.389$&$ 4.389$&$0.618$&$47$&$ 3.147$&$ 5.631$&$$&$$&$$&$$&&\tabularnewline
+LikeSportsGames.no - yes&$49$&$ 0.130$&$ 0.130$&$0.659$&$$&$-1.196$&$ 1.457$&$ 0.198$&$0.844$&$0.844$&$ 0.085$&&\tabularnewline
+LikeStrategyGames.no&$12$&$ 3.861$&$ 3.861$&$0.423$&$47$&$ 3.009$&$ 4.713$&$$&$$&$$&$$&&\tabularnewline
+LikeStrategyGames.yes&$37$&$ 4.712$&$ 4.712$&$0.241$&$47$&$ 4.227$&$ 5.197$&$$&$$&$$&$$&&\tabularnewline
+LikeStrategyGames.no - yes&$49$&$-0.851$&$-0.851$&$0.487$&$$&$-1.831$&$ 0.129$&$-1.746$&$0.087$&$0.087$&$-0.571$&&\tabularnewline
+LikeNovelGames.no&$40$&$ 4.308$&$ 4.308$&$0.230$&$47$&$ 3.846$&$ 4.771$&$$&$$&$$&$$&&\tabularnewline
+LikeNovelGames.yes&$ 9$&$ 5.370$&$ 5.370$&$0.485$&$47$&$ 4.395$&$ 6.345$&$$&$$&$$&$$&&\tabularnewline
+LikeNovelGames.no - yes&$49$&$-1.062$&$-1.062$&$0.536$&$$&$-2.141$&$ 0.017$&$-1.980$&$0.054$&$0.054$&$-0.719$&&\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\end{document}

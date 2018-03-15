@@ -68,7 +68,7 @@ all_nonparametric_results <- lapply(list_dvs, function(dv) {
     
     path <- paste0(x$path, 'nonparametric-analysis-plots/')
     filename <- paste0(x$path, 'NonParametricAnalysis.xlsx')
-    result <- do_nonparametric_test(sdat, dv = dv, iv = x$iv, between = c(x$iv))
+    result <- do_nonparametric_test(sdat, wid = 'UserID', dv = dv, iv = x$iv, between = c(x$iv))
     
     write_plots_for_nonparametric_test(
       result, ylab = "Score", title = x$title

@@ -11,6 +11,222 @@
 \maketitle
 
 
+\section{Summary of Parametric Analysis (Motivation - Perceived Choice)}
+
+One-way between-subjects ANOVA tests were conducted to compare the effects on the participants' motivation (Intrinsic Motivation, Interest/Enjoyment, Perceived Competence, Value/Userfulness) in relation to their sex (male, female), age (adulthood  $\geq$ 25y/o, emerging-dulhood $\geq$ 18y/o to 25y/o, adolescence $\geq$ 11y/o to 18y/o, childhood $<$ 11y/o),  and academic degree (basic-school, undergraduate, postgraduate). In this analysis, the effects on the motivation of students was also compared in relation their liking for the domain-content (\emph{LikeDomainContent}), their declaration to known the domain-content (\emph{KnownDomainContent}), and the participant liking for different games (liking by action games - \emph{LikeActionGames} , liking by adventures games - \emph{LikeAdventureGames}, ... , liking by novel games - \emph{LikeNovelGames} ). Table \ref{tab:one-way-motivation} summarizes the significant differences obtained as results of ANOVA tests in which there are significant difference on the participants' intrinsic motivation in relation to their liking for the the domain-content ($F(1,47) = 4.434$, $p = 0.041$), their liking by simulation games ($F(1,31) = 4.386$, $p = 0.045$), and their liking for strategy games ($F(1,24)=34.55$, $p=0.001$). Post-hoc comparisons using the Tukey HSD test summarized in the \ref{tab:post-hoc-motivation} indicates that the mean of intrinsic motivation score for participants who like the domain-content ($lsmean=5.257$, $SE=0.214$) is greater than the mean of intrinsic score for participants who don't like the domain-content ($lsmean=4.639$, $SE=0.201$). In relation to the participants' liking by simulation games, the post-hoc comparisons indicates that the mean of participants ....
+
+We also found significant difference on the participants' interest/enjoyment in the ANOVA tests in relation to the declaration to know the domain-content ($F(1,47) = 4.303$, $p = 0.044$),  ... (\emph{repeat similar to the intrinsic motivation})
+
+\newpage
+
+%latex.default(result_df, caption = paste("Summary of one-way ANOVA results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrrl}\caption{Summary of one-way ANOVA results} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Sum Sq}&\multicolumn{1}{c}{Df}&\multicolumn{1}{c}{F value}&\multicolumn{1}{c}{Pr(\textgreater F)}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Sum Sq}&\multicolumn{1}{c}{Df}&\multicolumn{1}{c}{F value}&\multicolumn{1}{c}{Pr(\textgreater F)}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{tab:one-way-motivation}
+
+Interest/Enjoyment:(Intercept)&$1025.921$&$ 1$&$502.879$&$0.000$&\tabularnewline
+Interest/Enjoyment:KnownDomainContent&$   8.778$&$ 1$&$  4.303$&$0.044$&*\tabularnewline
+KnownDomainContent.Residuals&$  95.884$&$47$&$$&$$&\tabularnewline
+
+Interest/Enjoyment:(Intercept)&$1045.082$&$ 1$&$705.542$&$0.000$&\tabularnewline
+Interest/Enjoyment:LikeDomainContent&$   7.729$&$ 1$&$  5.218$&$0.027$&*\tabularnewline
+Interest/Enjoyment:Residuals&$  63.694$&$43$&$$&$$&\tabularnewline
+
+Interest/Enjoyment:(Intercept)&$1044.560$&$ 1$&$605.364$&$0.000$&\tabularnewline
+Interest/Enjoyment:LikePlatformerGames&$   7.388$&$ 1$&$  4.281$&$0.044$&*\tabularnewline
+Interest/Enjoyment:Residuals&$  77.648$&$45$&$$&$$&\tabularnewline
+
+Perceived Competence:AcademicDegree.(Intercept)&$ 394.742$&$ 1$&$278.601$&$0.000$&\tabularnewline
+Perceived Competence:AcademicDegree.AcademicDegree&$  19.625$&$ 2$&$  6.925$&$0.003$&**\tabularnewline
+Perceived Competence:AcademicDegree.Residuals&$  59.509$&$42$&$$&$$&\tabularnewline
+
+Value/Usefulness:LikeDomainContent.(Intercept)&$1197.034$&$ 1$&$1136.398$&$0.000$&\tabularnewline
+Value/Usefulness:LikeDomainContent.LikeDomainContent&$  14.564$&$ 1$&$  13.826$&$0.001$&**\tabularnewline
+Value/Usefulness:LikeDomainContent.Residuals&$  41.081$&$39$&$$&$$&\tabularnewline
+
+Value/Usefulness:LikePuzzleGames.(Intercept)&$ 913.952$&$ 1$&$1906.904$&$0.000$&\tabularnewline
+Value/Usefulness:LikePuzzleGames.LikePuzzleGames&$   3.200$&$ 1$&$   6.677$&$0.015$&*\tabularnewline
+Value/Usefulness:LikePuzzleGames.Residuals&$  13.420$&$28$&$$&$$&\tabularnewline
+
+Value/Usefulness:LikeRacingGames.(Intercept)&$ 948.656$&$ 1$&$ 712.030$&$0.000$&\tabularnewline
+Value/Usefulness:LikeRacingGames.LikeRacingGames&$  10.454$&$ 1$&$   7.846$&$0.008$&**\tabularnewline
+Value/Usefulness:LikeRacingGames.Residuals&$  54.625$&$41$&$$&$$&\tabularnewline
+
+Value/Usefulness:LikeShooterGames.(Intercept)&$1191.601$&$ 1$&$ 622.725$&$0.000$&\tabularnewline
+Value/Usefulness:LikeShooterGames.LikeShooterGames&$   9.292$&$ 1$&$   4.856$&$0.032$&*\tabularnewline
+Value/Usefulness:LikeShooterGames.Residuals&$  89.936$&$47$&$$&$$&\tabularnewline
+
+Value/Usefulness:LikeStrategyGames.(Intercept)&$ 814.151$&$ 1$&$ 480.908$&$0.000$&\tabularnewline
+Value/Usefulness:LikeStrategyGames.LikeStrategyGames&$  11.111$&$ 1$&$   6.563$&$0.014$&*\tabularnewline
+Value/Usefulness:LikeStrategyGames.Residuals&$  77.876$&$46$&$$&$$&\tabularnewline
+
+Intrinsic Motivation:LikeDomainContent.(Intercept)&$1195.137$&$ 1$&$1138.515$&$0.000$&\tabularnewline
+Intrinsic Motivation:LikeDomainContent.LikeDomainContent&$   4.654$&$ 1$&$   4.434$&$0.041$&*\tabularnewline
+Intrinsic Motivation:LikeDomainContent.Residuals&$  49.337$&$47$&$$&$$&\tabularnewline
+
+Intrinsic Motivation:LikeSimulationGames.(Intercept)&$ 750.255$&$ 1$&$1427.783$&$0.000$&\tabularnewline
+Intrinsic Motivation:LikeSimulationGames.LikeSimulationGames&$   2.305$&$ 1$&$   4.386$&$0.045$&*\tabularnewline
+Intrinsic Motivation:LikeSimulationGames.Residuals&$  16.290$&$31$&$$&$$&\tabularnewline
+
+Intrinsic Motivation:LikeStrategyGames.(Intercept)&$ 639.487$&$ 1$&$3079.334$&$0.000$&\tabularnewline
+Intrinsic Motivation:LikeStrategyGames.LikeStrategyGames&$   7.175$&$ 1$&$  34.552$&$0.000$&**\tabularnewline
+Intrinsic Motivation:LikeStrategyGames.Residuals&$   4.984$&$24$&$$&$$&\tabularnewline
+
+\hline
+\end{longtable}}
+{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }
+
+\newpage
+
+
+%latex.default(post_hoc_df, caption = paste("Descriptive statistics and Tukey post-hoc test results",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\small
+\begin{longtable}{lrrrrrrrrrrrll}\caption{Descriptive statistics and Tukey post-hoc test results} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{mean}&\multicolumn{1}{c}{lsmean}&\multicolumn{1}{c}{SE}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{lwr.CI}&\multicolumn{1}{c}{upr.CI}&\multicolumn{1}{c}{t.ratio}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{p.ajd}&\multicolumn{1}{c}{g}&\multicolumn{1}{c}{sig}&\multicolumn{1}{c}{mag}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{mean}&\multicolumn{1}{c}{lsmean}&\multicolumn{1}{c}{SE}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{lwr.CI}&\multicolumn{1}{c}{upr.CI}&\multicolumn{1}{c}{t.ratio}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{p.ajd}&\multicolumn{1}{c}{g}&\multicolumn{1}{c}{sig}&\multicolumn{1}{c}{mag}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{tab:post-hoc-motivation}
+Interest/Enjoyment & & & & & & & & & & & & & \tabularnewline
+\hline
+KnownDomainContent.no&$25$&$ 4.153$&$ 4.153$&$0.286$&$47$&$ 3.579$&$ 4.728$&$$&$$&$$&$$&&\tabularnewline
+KnownDomainContent.yes&$24$&$ 5.000$&$ 5.000$&$0.292$&$47$&$ 4.413$&$ 5.587$&$$&$$&$$&$$&&\tabularnewline
+KnownDomainContent.no - yes&$49$&$-0.847$&$-0.847$&$0.408$&$$&$-1.668$&$-0.026$&$-2.074$&$0.044$&$0.044$&$-0.583$&*&medium\tabularnewline
+LikeDomainContent.no&$23$&$ 4.406$&$ 4.406$&$0.254$&$43$&$ 3.894$&$ 4.918$&$$&$$&$$&$$&&\tabularnewline
+LikeDomainContent.yes&$22$&$ 5.235$&$ 5.235$&$0.259$&$43$&$ 4.712$&$ 5.758$&$$&$$&$$&$$&&\tabularnewline
+LikeDomainContent.no - yes&$45$&$-0.829$&$-0.829$&$0.363$&$$&$-1.561$&$-0.097$&$-2.284$&$0.027$&$0.027$&$-0.669$&*&medium\tabularnewline
+LikePlatformerGames.no&$25$&$ 4.327$&$ 4.327$&$0.263$&$45$&$ 3.798$&$ 4.856$&$$&$$&$$&$$&&\tabularnewline
+LikePlatformerGames.yes&$22$&$ 5.121$&$ 5.121$&$0.280$&$45$&$ 4.557$&$ 5.685$&$$&$$&$$&$$&&\tabularnewline
+LikePlatformerGames.no - yes&$47$&$-0.795$&$-0.795$&$0.384$&$$&$-1.568$&$-0.021$&$-2.069$&$0.044$&$0.044$&$-0.595$&*&medium\tabularnewline
+\hline
+
+Perceived Competence & & & & & & & & & & & & & \tabularnewline
+AcademicDegree.basic-school&$10$&$ 3.467$&$ 3.467$&$0.376$&$42$&$ 2.707$&$ 4.226$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.postgraduate&$ 4$&$ 3.833$&$ 3.833$&$0.595$&$42$&$ 2.632$&$ 5.034$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.basic-school - postgraduate&$14$&$-0.367$&$-0.367$&$0.704$&$$&$-2.078$&$ 1.344$&$-0.521$&$0.862$&$0.862$&$-0.268$&&\tabularnewline
+AcademicDegree.basic-school1&$10$&$ 3.467$&$ 3.467$&$0.376$&$42$&$ 2.707$&$ 4.226$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.undergraduate&$31$&$ 4.984$&$ 4.984$&$0.214$&$42$&$ 4.552$&$ 5.415$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.basic-school - undergraduate&$41$&$-1.517$&$-1.517$&$0.433$&$$&$-2.569$&$-0.466$&$-3.505$&$0.003$&$0.003$&$-1.220$&**&large\tabularnewline
+AcademicDegree.postgraduate1&$ 4$&$ 3.833$&$ 3.833$&$0.595$&$42$&$ 2.632$&$ 5.034$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.undergraduate1&$31$&$ 4.984$&$ 4.984$&$0.214$&$42$&$ 4.552$&$ 5.415$&$$&$$&$$&$$&&\tabularnewline
+AcademicDegree.postgraduate - undergraduate&$35$&$-1.151$&$-1.151$&$0.632$&$$&$-2.687$&$ 0.386$&$-1.819$&$0.176$&$0.176$&$-1.005$&&\tabularnewline
+\hline
+
+\newpage
+Value/Usefulness & & & & & & & & & & & & & \tabularnewline
+LikeDomainContent.no&$23$&$ 4.843$&$ 4.843$&$0.214$&$39$&$ 4.411$&$ 5.276$&$$&$$&$$&$$&&\tabularnewline
+LikeDomainContent.yes&$18$&$ 6.044$&$ 6.044$&$0.242$&$39$&$ 5.555$&$ 6.534$&$$&$$&$$&$$&&\tabularnewline
+LikeDomainContent.no - yes&$41$&$-1.201$&$-1.201$&$0.323$&$$&$-1.854$&$-0.548$&$-3.718$&$0.001$&$0.001$&$-1.148$&**&large\tabularnewline
+LikePuzzleGames.no&$12$&$ 5.300$&$ 5.300$&$0.200$&$28$&$ 4.891$&$ 5.709$&$$&$$&$$&$$&&\tabularnewline
+LikePuzzleGames.yes&$18$&$ 5.967$&$ 5.967$&$0.163$&$28$&$ 5.632$&$ 6.301$&$$&$$&$$&$$&&\tabularnewline
+LikePuzzleGames.no - yes&$30$&$-0.667$&$-0.667$&$0.258$&$$&$-1.195$&$-0.138$&$-2.584$&$0.015$&$0.015$&$-0.937$&*&large\tabularnewline
+LikeRacingGames.no&$29$&$ 5.538$&$ 5.538$&$0.214$&$41$&$ 5.105$&$ 5.971$&$$&$$&$$&$$&&\tabularnewline
+LikeRacingGames.yes&$14$&$ 4.486$&$ 4.486$&$0.308$&$41$&$ 3.863$&$ 5.109$&$$&$$&$$&$$&&\tabularnewline
+LikeRacingGames.no - yes&$43$&$ 1.052$&$ 1.052$&$0.376$&$$&$ 0.294$&$ 1.811$&$ 2.801$&$0.008$&$0.008$&$ 0.895$&**&large\tabularnewline
+LikeShooterGames.no&$26$&$ 5.377$&$ 5.377$&$0.271$&$47$&$ 4.831$&$ 5.923$&$$&$$&$$&$$&&\tabularnewline
+LikeShooterGames.yes&$23$&$ 4.504$&$ 4.504$&$0.288$&$47$&$ 3.924$&$ 5.085$&$$&$$&$$&$$&&\tabularnewline
+LikeShooterGames.no - yes&$49$&$ 0.873$&$ 0.873$&$0.396$&$$&$ 0.076$&$ 1.669$&$ 2.204$&$0.032$&$0.032$&$ 0.621$&*&medium\tabularnewline
+LikeStrategyGames.no&$12$&$ 4.200$&$ 4.200$&$0.376$&$46$&$ 3.444$&$ 4.956$&$$&$$&$$&$$&&\tabularnewline
+LikeStrategyGames.yes&$36$&$ 5.311$&$ 5.311$&$0.217$&$46$&$ 4.875$&$ 5.748$&$$&$$&$$&$$&&\tabularnewline
+LikeStrategyGames.no - yes&$48$&$-1.111$&$-1.111$&$0.434$&$$&$-1.984$&$-0.238$&$-2.562$&$0.014$&$0.014$&$-0.840$&*&large\tabularnewline
+\hline
+
+Intrinsic Motivation & & & & & & & & & & & & & \tabularnewline
+LikeDomainContent.no&$26$&$ 4.639$&$ 4.639$&$0.201$&$47$&$ 4.235$&$ 5.043$&$$&$$&$$&$$&&\tabularnewline
+LikeDomainContent.yes&$23$&$ 5.257$&$ 5.257$&$0.214$&$47$&$ 4.827$&$ 5.687$&$$&$$&$$&$$&&\tabularnewline
+LikeDomainContent.no - yes&$49$&$-0.618$&$-0.618$&$0.293$&$$&$-1.208$&$-0.028$&$-2.106$&$0.041$&$0.041$&$-0.593$&*&medium\tabularnewline
+LikeSimulationGames.no&$22$&$ 4.777$&$ 4.777$&$0.155$&$31$&$ 4.462$&$ 5.092$&$$&$$&$$&$$&&\tabularnewline
+LikeSimulationGames.yes&$11$&$ 5.338$&$ 5.338$&$0.219$&$31$&$ 4.892$&$ 5.783$&$$&$$&$$&$$&&\tabularnewline
+LikeSimulationGames.no - yes&$33$&$-0.561$&$-0.561$&$0.268$&$$&$-1.107$&$-0.015$&$-2.094$&$0.045$&$0.045$&$-0.755$&*&medium\tabularnewline
+LikeStrategyGames.no&$ 8$&$ 4.804$&$ 4.804$&$0.161$&$24$&$ 4.471$&$ 5.136$&$$&$$&$$&$$&&\tabularnewline
+LikeStrategyGames.yes&$18$&$ 5.942$&$ 5.942$&$0.107$&$24$&$ 5.720$&$ 6.163$&$$&$$&$$&$$&&\tabularnewline
+LikeStrategyGames.no - yes&$26$&$-1.138$&$-1.138$&$0.194$&$$&$-1.538$&$-0.739$&$-5.878$&$0.000$&$0.000$&$-2.419$&**&large\tabularnewline
+\hline
+
+\end{longtable}}\end{landscape}
+
+\newpage
+
+\section{Summary of NonParametric Analysis}
+
+Due to the non-normality of data obtained in this evaluation for the dependent variables of spending time (\emph{SpendTime}) and the improvement of skill/knowledge related to the content domain (\emph{GainScore}), Kruskal-Wallis rank tests were performed to compare the effects in these dependent variables in relation to the participants' sex, age, academic degree, liking for the domain-content, declaration to known the domain-content, and liking for different games. Table \ref{tab:kruskall-spending-time} summarized the significant differences found using the Kruskal-Wallis rank tests in which .... . The Pair Wilcoxon-Man signed-rank tests shown in Table \ref{tab:wilcoxon-spending-time} indicates that the the media-ranks of spending time for the participants who ... is greter than ...
+
+
+\setlongtables{\small
+\begin{longtable}{lrrrl}\caption{Summary of Kruskal-Wallis rank test results} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{tab:kruskall-spending-time}
+SpendingTime:LikeFightingGames&$3.896$&$1$&$0.048$&*\tabularnewline
+SpendingTime:LikeFictionGames&$4.649$&$1$&$0.031$&*\tabularnewline
+SpendingTime:LikeNovelGames&$4.891$&$1$&$0.027$&*\tabularnewline
+\hline
+\end{longtable}}
+%\scriptsize{GainScore = Improv. Learning Score \\ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }
+
+
+
+\newpage
+
+
+%latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables
+\begin{landscape}
+{\small
+\begin{longtable}{llrrrrrrrrl}\caption{Descriptive statistic of the pair wilcoxon analysis} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{tab:wilcoxon-spending-time}
+SpendingTime & & & & & & & & & & \tabularnewline
+
+LikeFightingGames&no&$33$&$15$&$21.82$&$720.0$&$159.0$&$-1.97$&$0.024$&$0.285$&small\tabularnewline
+LikeFightingGames&yes&$15$&$27$&$30.40$&$456.0$&$159.0$&$-1.97$&$0.024$&$0.285$&small\tabularnewline
+
+LikeFictionGames&no&$29$&$15$&$20.98$&$608.5$&$173.5$&$-2.16$&$0.015$&$0.311$&medium\tabularnewline
+LikeFictionGames&yes&$19$&$25$&$29.87$&$567.5$&$173.5$&$-2.16$&$0.015$&$0.311$&medium\tabularnewline
+
+LikeNovelGames&no&$39$&$15$&$22.36$&$872.0$&$ 92.0$&$-2.21$&$0.013$&$0.319$&medium\tabularnewline
+LikeNovelGames&yes&$ 9$&$25$&$33.78$&$304.0$&$ 92.0$&$-2.21$&$0.013$&$0.319$&medium\tabularnewline
+
+\hline
+\end{longtable}}
+\end{landscape}
+
+\newpage
+
+\section{Summary of Previous NonParametric Analysis}
 
 %latex.default(result_df, caption = paste("Summary of Kruskal-Wallis rank test results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
 \setlongtables{\small
@@ -25,29 +241,23 @@
 \endhead
 \hline
 \endfoot
-\label{result}
+\label{tab:-time}
 SpendingTime:LikeFightingGames&$3.896$&$1$&$0.048$&*\tabularnewline
 SpendingTime:LikeFictionGames&$4.649$&$1$&$0.031$&*\tabularnewline
 SpendingTime:LikeNovelGames&$4.891$&$1$&$0.027$&*\tabularnewline
-
 Interest/Enjoyment:LikeDomainContent&$6.133$&$1$&$0.013$&*\tabularnewline
 Perceived Choice:LikePuzzleGames&$5.834$&$1$&$0.016$&*\tabularnewline
-
-
-
 Perceived Competence:AcademicDegree&$6.312$&$2$&$0.043$&*\tabularnewline
 Perceived Competence:KnownDomainContent&$4.257$&$1$&$0.039$&*\tabularnewline
 Perceived Competence:LikePlatformerGames&$4.960$&$1$&$0.026$&*\tabularnewline
 Perceived Competence:LikeNovelGames&$4.333$&$1$&$0.037$&*\tabularnewline
-
 Value/Usefulness:LikeDomainContent&$4.489$&$1$&$0.034$&*\tabularnewline
 Value/Usefulness:LikeShooterGames&$4.489$&$1$&$0.034$&*\tabularnewline
 Value/Usefulness:LikeStrategyGames&$4.302$&$1$&$0.038$&*\tabularnewline
-
 Intrinsic Motivation:LikeDomainContent&$4.182$&$1$&$0.041$&*\tabularnewline
 \hline
 \end{longtable}}
-\raggedleft{ \scriptsize{GainScore = Improv. Learning Score \\ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+\scriptsize{GainScore = Improv. Learning Score \\ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }
 
 
 %latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
@@ -101,6 +311,7 @@ LikePlatformerGames&yes&$23$&$5.50$&$29.83$&$ 686.0$&$188.0$&$-2.23$&$0.013$&$0.
 LikeNovelGames&no&$40$&$4.33$&$22.99$&$ 919.5$&$ 99.5$&$-2.08$&$0.018$&$0.297$&small\tabularnewline
 LikeNovelGames&yes&$ 9$&$5.50$&$33.94$&$ 305.5$&$ 99.5$&$-2.08$&$0.018$&$0.297$&small\tabularnewline
 \hline
+\newpage
 
 Value/Usefulness & & & & & & & & & & \tabularnewline
 LikeDomainContent&no&$26$&$4.9$&$20.94$&$ 544.5$&$193.5$&$-2.12$&$0.017$&$0.303$&medium\tabularnewline

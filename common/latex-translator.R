@@ -179,17 +179,29 @@ write_rel_analysis_in_latex <- function(
 
 ## Function to write in latex a param statistic analysis
 write_param_statistics_analysis_in_latex <- function(
-  parametric_results, dvs, filename, in_title = NULL, append = F) {
+  parametric_results, ivs, filename, in_title = NULL, append = F) {
   
   library(Hmisc)
+  write("", file = filename, append = append)
+  if (!append) {
+    write(paste("\\documentclass[6pt]{article}"
+                ,"\\usepackage{longtable}"
+                ,"\\usepackage{rotating}"
+                ,"\\usepackage{lscape}"
+                ,"\\usepackage{ctable}"
+                ,"\\begin{document}", sep = "\n")
+          , file = filename, append = T)
+  }
   
   write(paste0("\\section{Summaries of Parametric Statistics Analysis"
-               , in_title, "}"), file = filename, append = append)
+               , in_title, "}"), file = filename, append = T)
   write("", file = filename, append = T)
   
+  list_ivs <- as.list(ivs)
+  names(list_ivs) <- ivs
   ##
-  result_df <- do.call(rbind, lapply(dvs, FUN = function(dv) {
-    p_result <- parametric_results[[dv]]
+  result_df <- do.call(rbind, lapply(list_ivs, FUN = function(iv) {
+    p_result <- parametric_results[[iv]]
     aov_df <- round(p_result$ezAov$Anova, 3)
     
     Sig <- sapply(aov_df$`Pr(>F)`, FUN = function(x) {
@@ -198,20 +210,12 @@ write_param_statistics_analysis_in_latex <- function(
     Sig[[1]] <- NA
     
     aov_df <- cbind(aov_df, Sig)
-    aov_df <- rbind(c(NA), aov_df)
     return(aov_df)
   }))
-  rownames(result_df) <- NULL
-  
-  rownames(result_df) <- c(unlist(lapply(dvs, FUN = function(dv) {
-    p_result <- parametric_results[[dv]]
-    #sapply(rownames(p_result$ezAov$Anova), paste, dv, sep=".")
-    return(c(dv, paste(dv, rownames(p_result$ezAov$Anova), sep = ":")))
-  })))
   
   ##
   latex(result_df
-        , caption = paste("Summary of two-way ANOVA results", in_title)
+        , caption = paste("Summary of one-way ANOVA results", in_title)
         #, insert.bottom = 
         , size = "small", longtable = T, ctable=F, landscape = F
         , rowlabel = "", where='!htbp', file = filename, append = T)
@@ -222,12 +226,9 @@ write_param_statistics_analysis_in_latex <- function(
   write("", file = filename, append = T)
   
   ##
-  post_hoc_df <- do.call(rbind, lapply(dvs, FUN = function(dv) {
-    parametric_result <- parametric_results[[dv]]
+  post_hoc_df <- do.call(rbind, lapply(list_ivs, FUN = function(iv) {
+    parametric_result <- parametric_results[[iv]]
     result_df <- get_descritive_and_post_hoc_dataframe(parametric_result)
-    row_names <- rownames(result_df)
-    result_df <- rbind(rep(NA, ncol(result_df)), result_df)
-    rownames(result_df) <- c(dv, paste(dv, row_names, sep=":"))
     return(result_df)
   }))
   
@@ -241,6 +242,10 @@ write_param_statistics_analysis_in_latex <- function(
       , "Signif. codes: ", "0 ``**'' 0.01 ``*'' 0.05"
       , "}}", "\n"), collapse = " "), file = filename, append = T)
   write("", file = filename, append = T)
+  
+  if (!append) {
+    write("\\end{document}", file = filename, append = T)
+  }
 }
 
 write_nonparam_statistics_analysis_in_latex <- function(
