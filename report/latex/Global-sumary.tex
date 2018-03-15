@@ -1,0 +1,126 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\usepackage{blindtext}
+\title{Global Summary of Statistics Analysis}
+\begin{document}
+
+\maketitle
+
+
+
+%latex.default(result_df, caption = paste("Summary of Kruskal-Wallis rank test results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrl}\caption{Summary of Kruskal-Wallis rank test results} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+SpendingTime:LikeFightingGames&$3.896$&$1$&$0.048$&*\tabularnewline
+SpendingTime:LikeFictionGames&$4.649$&$1$&$0.031$&*\tabularnewline
+SpendingTime:LikeNovelGames&$4.891$&$1$&$0.027$&*\tabularnewline
+
+Interest/Enjoyment:LikeDomainContent&$6.133$&$1$&$0.013$&*\tabularnewline
+Perceived Choice:LikePuzzleGames&$5.834$&$1$&$0.016$&*\tabularnewline
+
+
+
+Perceived Competence:AcademicDegree&$6.312$&$2$&$0.043$&*\tabularnewline
+Perceived Competence:KnownDomainContent&$4.257$&$1$&$0.039$&*\tabularnewline
+Perceived Competence:LikePlatformerGames&$4.960$&$1$&$0.026$&*\tabularnewline
+Perceived Competence:LikeNovelGames&$4.333$&$1$&$0.037$&*\tabularnewline
+
+Value/Usefulness:LikeDomainContent&$4.489$&$1$&$0.034$&*\tabularnewline
+Value/Usefulness:LikeShooterGames&$4.489$&$1$&$0.034$&*\tabularnewline
+Value/Usefulness:LikeStrategyGames&$4.302$&$1$&$0.038$&*\tabularnewline
+
+Intrinsic Motivation:LikeDomainContent&$4.182$&$1$&$0.041$&*\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{GainScore = Improv. Learning Score \\ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+%latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables
+\begin{landscape}
+{\small
+\begin{longtable}{llrrrrrrrrl}\caption{Descriptive statistic of the pair wilcoxon analysis} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+SpendingTime & & & & & & & & & & \tabularnewline
+
+LikeFightingGames&no&$33$&$15$&$21.82$&$720.0$&$159.0$&$-1.97$&$0.024$&$0.285$&small\tabularnewline
+LikeFightingGames&yes&$15$&$27$&$30.40$&$456.0$&$159.0$&$-1.97$&$0.024$&$0.285$&small\tabularnewline
+
+LikeFictionGames&no&$29$&$15$&$20.98$&$608.5$&$173.5$&$-2.16$&$0.015$&$0.311$&medium\tabularnewline
+LikeFictionGames&yes&$19$&$25$&$29.87$&$567.5$&$173.5$&$-2.16$&$0.015$&$0.311$&medium\tabularnewline
+
+LikeNovelGames&no&$39$&$15$&$22.36$&$872.0$&$ 92.0$&$-2.21$&$0.013$&$0.319$&medium\tabularnewline
+LikeNovelGames&yes&$ 9$&$25$&$33.78$&$304.0$&$ 92.0$&$-2.21$&$0.013$&$0.319$&medium\tabularnewline
+
+\hline
+
+Interest/Enjoyment & & & & & & & & & & \tabularnewline
+LikeDomainContent&no&$26$&$4.25$&$20.25$&$526.5$&$175.5$&$-2.48$&$0.006$&$0.354$&medium\tabularnewline
+LikeDomainContent&yes&$23$&$5.50$&$30.37$&$698.5$&$175.5$&$-2.48$&$0.006$&$0.354$&medium\tabularnewline
+\hline
+Perceived Choice & & & & & & & & & & \tabularnewline
+LikePuzzleGames&no&$19$&$6.75$&$16.97$&$322.5$&$132.5$&$-2.42$&$0.008$&$0.373$&medium\tabularnewline
+LikePuzzleGames&yes&$23$&$7.00$&$25.24$&$580.5$&$132.5$&$-2.42$&$0.008$&$0.373$&medium\tabularnewline
+\hline
+
+Perceived Competence & & & & & & & & & & \tabularnewline
+AcademicDegree&basic-school&$10$&$3.42$&$13.60$&$ 136.0$&$ 81.0$&$-2.50$&$0.006$&$0.376$&medium\tabularnewline
+AcademicDegree&undergraduate&$34$&$4.92$&$25.12$&$ 854.0$&$ 81.0$&$-2.50$&$0.006$&$0.376$&medium\tabularnewline
+
+KnownDomainContent&no&$25$&$4.17$&$20.88$&$ 522.0$&$197.0$&$-2.06$&$0.019$&$0.295$&small\tabularnewline
+KnownDomainContent&yes&$24$&$5.00$&$29.29$&$ 703.0$&$197.0$&$-2.06$&$0.019$&$0.295$&small\tabularnewline
+
+LikePlatformerGames&no&$26$&$4.00$&$20.73$&$ 539.0$&$188.0$&$-2.23$&$0.013$&$0.318$&medium\tabularnewline
+LikePlatformerGames&yes&$23$&$5.50$&$29.83$&$ 686.0$&$188.0$&$-2.23$&$0.013$&$0.318$&medium\tabularnewline
+
+LikeNovelGames&no&$40$&$4.33$&$22.99$&$ 919.5$&$ 99.5$&$-2.08$&$0.018$&$0.297$&small\tabularnewline
+LikeNovelGames&yes&$ 9$&$5.50$&$33.94$&$ 305.5$&$ 99.5$&$-2.08$&$0.018$&$0.297$&small\tabularnewline
+\hline
+
+Value/Usefulness & & & & & & & & & & \tabularnewline
+LikeDomainContent&no&$26$&$4.9$&$20.94$&$ 544.5$&$193.5$&$-2.12$&$0.017$&$0.303$&medium\tabularnewline
+LikeDomainContent&yes&$23$&$6.0$&$29.59$&$ 680.5$&$193.5$&$-2.12$&$0.017$&$0.303$&medium\tabularnewline
+
+LikeShooterGames&$26$&$5.8$&$29.06$&$ 755.5$&$404.5$&$ 2.12$&$0.017$&$0.303$&medium\tabularnewline
+LikeShooterGames&yes&$23$&$4.4$&$20.41$&$ 469.5$&$404.5$&$ 2.12$&$0.017$&$0.303$&medium\tabularnewline
+
+LikeStrategyGames&no&$12$&$4.0$&$17.58$&$ 211.0$&$133.0$&$-2.07$&$0.019$&$0.296$&small\tabularnewline
+LikeStrategyGames&yes&$37$&$5.6$&$27.41$&$1014.0$&$133.0$&$-2.07$&$0.019$&$0.296$&small\tabularnewline
+
+\hline
+
+Intrinsic Motivation & & & & & & & & & & \tabularnewline
+LikeDomainContent&no&$26$&$4.67$&$21.08$&$548$&$197$&$-2.04$&$0.020$&$0.292$&small\tabularnewline
+LikeDomainContent&yes&$23$&$5.76$&$29.43$&$677$&$197$&$-2.04$&$0.020$&$0.292$&small\tabularnewline
+\hline
+\end{longtable}}
+\end{landscape}
+
+
+
+\end{document}
