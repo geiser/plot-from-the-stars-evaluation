@@ -473,13 +473,14 @@ write_kruskal_statistics_analysis_in_latex <- function(
     return(set_wilcox_mods_df)
   }))
   
-  result_wilcoxon_df$Median <- round(result_wilcoxon_df$Median, 2)
-  result_wilcoxon_df$Mean.Ranks <- round(result_wilcoxon_df$Mean.Ranks, 2)
-  result_wilcoxon_df$Sum.Ranks <- round(result_wilcoxon_df$Sum.Ranks, 2)
-  result_wilcoxon_df$Z <- round(result_wilcoxon_df$Z, 2)
-  result_wilcoxon_df$p.value <- round(result_wilcoxon_df$p.value, 3)
-  result_wilcoxon_df$r <- round(result_wilcoxon_df$r,3)
-  
+  if (!is.null(result_wilcoxon_df)){
+    result_wilcoxon_df$Median <- round(result_wilcoxon_df$Median, 2)
+    result_wilcoxon_df$Mean.Ranks <- round(result_wilcoxon_df$Mean.Ranks, 2)
+    result_wilcoxon_df$Sum.Ranks <- round(result_wilcoxon_df$Sum.Ranks, 2)
+    result_wilcoxon_df$Z <- round(result_wilcoxon_df$Z, 2)
+    result_wilcoxon_df$p.value <- round(result_wilcoxon_df$p.value, 3)
+    result_wilcoxon_df$r <- round(result_wilcoxon_df$r,3)
+  }
   write(paste0("\\section{Wilcoxon Pairs Statistics Analysis"
                , in_title, "}"), file = filename, append = T)
   write("", file = filename, append = T)
@@ -501,3 +502,31 @@ write_kruskal_statistics_analysis_in_latex <- function(
   }
 }
 
+## Summary of careless responses 
+write_winsorized_in_latex <- function(dd, filename, in_title = NULL, append = F) {
+  library(Hmisc)
+  write("", file = filename, append = append)
+  if (!append) {
+    write(paste("\\documentclass[6pt]{article}"
+                ,"\\usepackage{longtable}"
+                ,"\\usepackage{rotating}"
+                ,"\\usepackage{lscape}"
+                ,"\\usepackage{ctable}"
+                ,"\\begin{document}", sep = "\n")
+          , file = filename, append = T)
+    write("\\section{Summary of Winzorized Responses}", file = filename, append = T)
+  }
+  
+  if (!is.null(dd$get_data()) && length(dd$get_data()) > 0) {
+    latex(
+      as.data.frame(dd$get_data())
+      , rowname = NULL
+      , caption = paste("Summary of Winsorized responses", in_title)
+      , size = "scriptsize", longtable = T, ctable=F, landscape = T
+      , rowlabel = "", where='!htbp', file = filename, append = T)
+  }
+  
+  if (!append) {
+    write("\\end{document}", file = filename, append = T)
+  }
+}

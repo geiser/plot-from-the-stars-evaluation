@@ -1,0 +1,71 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summaries of Nonparametric Statistics Analysis for the Perceived Choice}
+
+%latex.default(result_df, caption = paste("Summary of Kruskal-Wallis rank test results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrl}\caption{Summary of Kruskal-Wallis rank test results  for the Perceived Choice} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Age&$0.580$&$2$&$0.748$&\tabularnewline
+Sex&$4.079$&$1$&$0.043$&*\tabularnewline
+LikeDomainContent&$0.007$&$1$&$0.935$&\tabularnewline
+LikeActionGames&$0.138$&$1$&$0.710$&\tabularnewline
+LikeAdventureGames&$2.611$&$1$&$0.106$&\tabularnewline
+LikeFightingGames&$0.699$&$1$&$0.403$&\tabularnewline
+LikeFictionGames&$0.617$&$1$&$0.432$&\tabularnewline
+LikePlatformerGames&$3.632$&$1$&$0.057$&\tabularnewline
+LikePuzzleGames&$0.003$&$1$&$0.955$&\tabularnewline
+LikeRacingGames&$0.000$&$1$&$1.000$&\tabularnewline
+LikeMusicalGames&$0.537$&$1$&$0.464$&\tabularnewline
+LikeShooterGames&$1.728$&$1$&$0.189$&\tabularnewline
+LikeSportsGames&$0.327$&$1$&$0.567$&\tabularnewline
+LikeStrategyGames&$0.002$&$1$&$0.967$&\tabularnewline
+LikeNovelGames&$0.380$&$1$&$0.538$&\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\section{Wilcoxon Pairs Statistics Analysis for the Perceived Choice}
+
+%latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\small
+\begin{longtable}{llrrrrrrrrl}\caption{Descriptive statistic of the pair wilcoxon analysis  for the Perceived Choice} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Sex.Sex.female:male.less.1&female&$ 3$&$4.50$&$ 4.00$&$ 12$&$ 6$&$-2.02$&$0.022$&$0.463$&medium\tabularnewline
+Sex.Sex.female:male.less.2&male&$16$&$5.92$&$11.12$&$178$&$ 6$&$-2.02$&$0.022$&$0.463$&medium\tabularnewline
+Sex.Sex.female:male.two.sided.1&female&$ 3$&$4.50$&$ 4.00$&$ 12$&$ 6$&$-2.02$&$0.045$&$0.463$&medium\tabularnewline
+Sex.Sex.female:male.two.sided.2&male&$16$&$5.92$&$11.12$&$178$&$ 6$&$-2.02$&$0.045$&$0.463$&medium\tabularnewline
+LikePlatformerGames.LikePlatformerGames.no:yes.greater.1&no&$11$&$6.00$&$12.09$&$133$&$67$&$ 1.91$&$0.029$&$0.437$&medium\tabularnewline
+LikePlatformerGames.LikePlatformerGames.no:yes.greater.2&yes&$ 8$&$4.92$&$ 7.12$&$ 57$&$67$&$ 1.91$&$0.029$&$0.437$&medium\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\end{document}

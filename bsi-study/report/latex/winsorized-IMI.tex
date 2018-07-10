@@ -1,0 +1,44 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summary of Winzorized Responses}
+%latex.default(as.data.frame(dd$get_data()), rowname = NULL, caption = paste("Summary of Winsorized responses",     in_title), size = "scriptsize", longtable = T, ctable = F,     landscape = T, rowlabel = "", where = "!htbp", file = filename,     append = T)%
+\setlongtables\begin{landscape}{\scriptsize
+\begin{longtable}{llll}\caption{Summary of Winsorized responses for the validation of adapted Portuguese IMI} \tabularnewline
+\hline\hline
+\multicolumn{1}{c}{!}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{---}&\multicolumn{1}{c}{...}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{c}{!}&\multicolumn{1}{c}{}&\multicolumn{1}{c}{---}&\multicolumn{1}{c}{...}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{as.data.frame}
+@@&Item29&Item17&...\tabularnewline
+...&...&...&...\tabularnewline
+&2&4&...\tabularnewline
+-\textgreater &4&2&...\tabularnewline
+-\textgreater &1&2&...\tabularnewline
+&3&1&...\tabularnewline
+...&...&...&...\tabularnewline
+&6&1&...\tabularnewline
+-\textgreater &4&7&...\tabularnewline
+&5&5&...\tabularnewline
+...&...&...&...\tabularnewline
+&5&2&...\tabularnewline
+-\textgreater &2&5&...\tabularnewline
+&4&1&...\tabularnewline
+...&...&...&...\tabularnewline
+&5&1&...\tabularnewline
+-\textgreater &7&2&...\tabularnewline
+&4&4&...\tabularnewline
+...&...&...&...\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+\end{document}

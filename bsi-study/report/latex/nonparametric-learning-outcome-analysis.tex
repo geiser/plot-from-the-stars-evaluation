@@ -1,0 +1,66 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summaries of Nonparametric Statistics Analysis for the improvement of right answers (Gain Score) from the pre-test to post-test}
+
+%latex.default(result_df, caption = paste("Summary of Kruskal-Wallis rank test results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrr}\caption{Summary of Kruskal-Wallis rank test results  for the improvement of right answers (Gain Score) from the pre-test to post-test} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Age&$0.335$&$2$&$0.846$&$$\tabularnewline
+Sex&$1.391$&$1$&$0.238$&$$\tabularnewline
+LikeDomainContent&$0.258$&$1$&$0.612$&$$\tabularnewline
+LikeActionGames&$1.360$&$1$&$0.244$&$$\tabularnewline
+LikeAdventureGames&$0.192$&$1$&$0.661$&$$\tabularnewline
+LikeFightingGames&$0.084$&$1$&$0.772$&$$\tabularnewline
+LikeFictionGames&$0.964$&$1$&$0.326$&$$\tabularnewline
+LikePlatformerGames&$0.060$&$1$&$0.806$&$$\tabularnewline
+LikePuzzleGames&$0.473$&$1$&$0.492$&$$\tabularnewline
+LikeRacingGames&$0.001$&$1$&$0.971$&$$\tabularnewline
+LikeMusicalGames&$0.321$&$1$&$0.571$&$$\tabularnewline
+LikeShooterGames&$0.031$&$1$&$0.861$&$$\tabularnewline
+LikeSportsGames&$1.754$&$1$&$0.185$&$$\tabularnewline
+LikeStrategyGames&$0.114$&$1$&$0.736$&$$\tabularnewline
+LikeNovelGames&$0.294$&$1$&$0.587$&$$\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\section{Wilcoxon Pairs Statistics Analysis for the improvement of right answers (Gain Score) from the pre-test to post-test}
+
+%latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\small
+\begin{longtable}{r}\caption{Descriptive statistic of the pair wilcoxon analysis  for the improvement of right answers (Gain Score) from the pre-test to post-test} \tabularnewline
+\hline\hline
+\multicolumn{1}{c}{}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{c}{}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+$$\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\end{document}

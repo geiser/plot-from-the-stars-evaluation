@@ -1,0 +1,71 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summaries of Nonparametric Statistics Analysis for the Intrinsic Motivation}
+
+%latex.default(result_df, caption = paste("Summary of Kruskal-Wallis rank test results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrl}\caption{Summary of Kruskal-Wallis rank test results  for the Intrinsic Motivation} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Age&$2.233$&$2$&$0.327$&\tabularnewline
+Sex&$2.454$&$1$&$0.117$&\tabularnewline
+LikeDomainContent&$2.286$&$1$&$0.131$&\tabularnewline
+LikeActionGames&$1.451$&$1$&$0.228$&\tabularnewline
+LikeAdventureGames&$0.437$&$1$&$0.509$&\tabularnewline
+LikeFightingGames&$1.039$&$1$&$0.308$&\tabularnewline
+LikeFictionGames&$0.050$&$1$&$0.823$&\tabularnewline
+LikePlatformerGames&$3.613$&$1$&$0.057$&\tabularnewline
+LikePuzzleGames&$1.252$&$1$&$0.263$&\tabularnewline
+LikeRacingGames&$0.550$&$1$&$0.459$&\tabularnewline
+LikeMusicalGames&$1.202$&$1$&$0.273$&\tabularnewline
+LikeShooterGames&$0.007$&$1$&$0.933$&\tabularnewline
+LikeSportsGames&$0.094$&$1$&$0.759$&\tabularnewline
+LikeStrategyGames&$4.690$&$1$&$0.030$&*\tabularnewline
+LikeNovelGames&$0.031$&$1$&$0.861$&\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\section{Wilcoxon Pairs Statistics Analysis for the Intrinsic Motivation}
+
+%latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\small
+\begin{longtable}{llrrrrrrrrl}\caption{Descriptive statistic of the pair wilcoxon analysis  for the Intrinsic Motivation} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+LikePlatformerGames.LikePlatformerGames.no:yes.greater.1&no&$11$&$5.12$&$12.09$&$133.0$&$67.0$&$ 1.90$&$0.029$&$0.436$&medium\tabularnewline
+LikePlatformerGames.LikePlatformerGames.no:yes.greater.2&yes&$ 8$&$4.26$&$ 7.12$&$ 57.0$&$67.0$&$ 1.90$&$0.029$&$0.436$&medium\tabularnewline
+LikeStrategyGames.LikeStrategyGames.no:yes.less.1&no&$ 9$&$4.40$&$ 7.06$&$ 63.5$&$18.5$&$-2.17$&$0.015$&$0.497$&medium\tabularnewline
+LikeStrategyGames.LikeStrategyGames.no:yes.less.2&yes&$10$&$5.22$&$12.65$&$126.5$&$18.5$&$-2.17$&$0.015$&$0.497$&medium\tabularnewline
+LikeStrategyGames.LikeStrategyGames.no:yes.two.sided.1&no&$ 9$&$4.40$&$ 7.06$&$ 63.5$&$18.5$&$-2.17$&$0.029$&$0.497$&medium\tabularnewline
+LikeStrategyGames.LikeStrategyGames.no:yes.two.sided.2&yes&$10$&$5.22$&$12.65$&$126.5$&$18.5$&$-2.17$&$0.029$&$0.497$&medium\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\end{document}

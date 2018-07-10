@@ -9,37 +9,27 @@ library(ez)
 
 participants <- read_csv('data/Participants.csv')
 dat <- merge(participants, read_csv('data/IMI.csv'))
-dat <- dplyr::mutate(
-  dat
-  , `Perceived Competence` = (dat$Item33PC2+dat$Item28PC2+dat$Item25PC2+dat$Item37PC2+dat$Item30PC2+8-dat$Item34PC2)/6
-  , `Value/Usefulness` = (dat$Item29VU+dat$Item26VU+dat$Item31VU+dat$Item36VU+dat$Item35VU)/5
-  , `Interest/Enjoyment` = (dat$Item24IE+dat$Item08IE+dat$Item21IE+dat$Item09IE+dat$Item12IE+dat$Item11IE)/6
-  , `Perceived Choice` = (32-(dat$Item05PC1+dat$Item13PC1+dat$Item18PC1+dat$Item03PC1))/4
-)
-dat <- dplyr::mutate(
-  dat
-  , `Intrinsic Motivation` = ((6*dat$`Perceived Competence`)+(5*dat$`Value/Usefulness`)+(6*dat$`Interest/Enjoyment`)+(4*dat$`Perceived Choice`))/21
-)
 
-dvs <- c("Perceived Competence", "Value/Usefulness", "Interest/Enjoyment", "Perceived Choice", "Intrinsic Motivation")
+dvs <- c("Interest/Enjoyment", "Perceived Choice", "Perceived Competence", "Value/Usefulness", "Intrinsic Motivation")
 list_dvs <- as.list(dvs)
 names(list_dvs) <- dvs
 
 list_info <- lapply(list_dvs, FUN = function(dv) {
   name <- gsub('\\W', '', dv)
   
-  ivs <- c("Age", "Sex", "AcademicDegree", "KnownDomainContent", "LikeDomainContent"
+  ivs <- c("Age", "Sex", "LikeDomainContent"
            , "LikeActionGames", "LikeAdventureGames", "LikeFightingGames"
            , "LikeFictionGames", "LikePlatformerGames", "LikePuzzleGames"
-           , "LikeRacingGames", "LikeMusicalGames", "LikeMMORPGGames"
-           , "LikeShooterGames", "LikeSimulationGames", "LikeSportsGames"
+           , "LikeRacingGames", "LikeMusicalGames"#, "LikeMMORPGGames"
+           , "LikeShooterGames"#, "LikeSimulationGames"
+           , "LikeSportsGames"
            , "LikeStrategyGames", "LikeNovelGames")
   list_ivs <- as.list(ivs)
   names(list_ivs) <- ivs
   info <- lapply(list_ivs, function(iv) {
     return(list(
       title = paste0(dv, " by ", iv)
-      , path = paste0("report/learning-outcome/by-",iv,"/")
+      , path = paste0("report/motivation/by-",iv,"/")
       , iv = iv
     ))
   })
@@ -47,18 +37,12 @@ list_info <- lapply(list_dvs, FUN = function(dv) {
   return(list(dv=dv, name =name, info = info))
 })
 
-# removing outliers
-dat_map <- lapply(list_dvs, FUN = function(dv){
-  userids <- dat$UserID[!dat[[dv]] %in% c(boxplot(dat[[dv]])$out)]
-  return(dat[dat$UserID %in% c(userids),])
-})
-
 #############################################################################
 ## Non-Parametric Statistic Analysis                                       ##
 #############################################################################
 all_nonparametric_results <- lapply(list_dvs, function(dv) {
   info <- list_info[[dv]]$info
-  sdat <- dat_map[[dv]]
+  sdat <- dat
   dir.create(paste0("report/motivation/", list_info[[dv]]$name), showWarnings = F)
     
   nonparametric_results <- lapply(info, FUN = function(x) {

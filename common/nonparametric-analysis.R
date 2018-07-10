@@ -222,7 +222,7 @@ write_wts_in_wb <- function(wt_mods, wb, iv, i, title = "", ylab = "Score", ylim
   
   xlsx.addLineBreak(sheet, 2)
   xlsx.addHeader(wb, sheet, "Wilcoxon data", level = 2, startCol = 1)
-  xlsx.addTable(wb, sheet, wt_mod$dat, startCol = 1, row.names = F)
+  xlsx.addTable(wb, sheet, as.data.frame(wt_mod$dat), startCol = 1, row.names = F)
 }
 
 ## Function to write summary of set wt mods
@@ -333,7 +333,7 @@ write_nonparametric_test_report <- function(n_result, filename, title = "", ylab
     if (is.null(data)) data <- n_result$data
     
     sheet <- xlsx::createSheet(wb, sheetName = "data")
-    xlsx.addTable(wb, sheet, data, startCol = 1, row.names = F)
+    xlsx.addTable(wb, sheet, as.data.frame(data), startCol = 1, row.names = F)
     
     ##
     saveWorkbook(wb, filename)

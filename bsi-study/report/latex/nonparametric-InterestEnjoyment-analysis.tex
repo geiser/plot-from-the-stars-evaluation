@@ -1,0 +1,67 @@
+
+\documentclass[6pt]{article}
+\usepackage{longtable}
+\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{ctable}
+\begin{document}
+\section{Summaries of Nonparametric Statistics Analysis for the Interest/Enjoyment}
+
+%latex.default(result_df, caption = paste("Summary of Kruskal-Wallis rank test results",     in_title), size = "small", longtable = T, ctable = F, landscape = F,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables{\small
+\begin{longtable}{lrrrr}\caption{Summary of Kruskal-Wallis rank test results  for the Interest/Enjoyment} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{chi.square}&\multicolumn{1}{c}{df}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{Sig}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+Age&$1.751$&$2$&$0.417$&$$\tabularnewline
+Sex&$0.918$&$1$&$0.338$&$$\tabularnewline
+LikeDomainContent&$1.234$&$1$&$0.267$&$$\tabularnewline
+LikeActionGames&$1.707$&$1$&$0.191$&$$\tabularnewline
+LikeAdventureGames&$0.085$&$1$&$0.771$&$$\tabularnewline
+LikeFightingGames&$1.960$&$1$&$0.162$&$$\tabularnewline
+LikeFictionGames&$0.457$&$1$&$0.499$&$$\tabularnewline
+LikePlatformerGames&$2.771$&$1$&$0.096$&$$\tabularnewline
+LikePuzzleGames&$0.079$&$1$&$0.778$&$$\tabularnewline
+LikeRacingGames&$0.490$&$1$&$0.484$&$$\tabularnewline
+LikeMusicalGames&$1.905$&$1$&$0.168$&$$\tabularnewline
+LikeShooterGames&$0.464$&$1$&$0.496$&$$\tabularnewline
+LikeSportsGames&$0.330$&$1$&$0.566$&$$\tabularnewline
+LikeStrategyGames&$1.145$&$1$&$0.285$&$$\tabularnewline
+LikeNovelGames&$0.158$&$1$&$0.691$&$$\tabularnewline
+\hline
+\end{longtable}}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\section{Wilcoxon Pairs Statistics Analysis for the Interest/Enjoyment}
+
+%latex.default(result_wilcoxon_df, caption = paste("Descriptive statistic of the pair wilcoxon analysis",     in_title), size = "small", longtable = T, ctable = F, landscape = T,     rowlabel = "", where = "!htbp", file = filename, append = T)%
+\setlongtables\begin{landscape}{\small
+\begin{longtable}{llrrrrrrrrl}\caption{Descriptive statistic of the pair wilcoxon analysis  for the Interest/Enjoyment} \tabularnewline
+\hline\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endfirsthead\caption[]{\em (continued)} \tabularnewline
+\hline
+\multicolumn{1}{l}{}&\multicolumn{1}{c}{Group}&\multicolumn{1}{c}{N}&\multicolumn{1}{c}{Median}&\multicolumn{1}{c}{Mean.Ranks}&\multicolumn{1}{c}{Sum.Ranks}&\multicolumn{1}{c}{U}&\multicolumn{1}{c}{Z}&\multicolumn{1}{c}{p.value}&\multicolumn{1}{c}{r}&\multicolumn{1}{c}{magnitude}\tabularnewline
+\hline
+\endhead
+\hline
+\endfoot
+\label{result}
+LikePlatformerGames.LikePlatformerGames.no:yes.greater.1&no&$11$&$5.43$&$11.82$&$130$&$64$&$1.66$&$0.049$&$0.382$&medium\tabularnewline
+LikePlatformerGames.LikePlatformerGames.no:yes.greater.2&yes&$ 8$&$4.93$&$ 7.50$&$ 60$&$64$&$1.66$&$0.049$&$0.382$&medium\tabularnewline
+\hline
+\end{longtable}}\end{landscape}
+\raggedleft{ \scriptsize{ Signif. codes:  0 ``**'' 0.01 ``*'' 0.05 }} 
+
+
+\end{document}
